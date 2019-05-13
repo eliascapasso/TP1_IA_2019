@@ -12,11 +12,11 @@
     <Strategy xsi:type="idemia:Search" searchStrategy="AStarSearch"/>
     <Goal name="ObjetivoAgente" value=" estadoAgente.getDestino().contains(estadoAgente.getPosicionAcual()) &amp;&amp; estadoAgente.getListaProductos().isEmpty()"/>
     <AgentState name="EstadoAgente">
-      <DataStructure name="destino" type="String"/>
+      <DataStructure name="destino" type="Other"/>
       <DataStructure name="mapa" type="Other"/>
-      <DataStructure name="posicionActual"/>
-      <DataStructure name="listaIntersecciones"/>
-      <DataStructure name="listaInterseccionesBloqueadas"/>
+      <DataStructure name="posicionActual" type="Other"/>
+      <DataStructure name="listaIntersecciones" type="Other"/>
+      <DataStructure name="listaInterseccionesBloqueadas" type="Other"/>
     </AgentState>
   </Agent>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="TrasladarseA"/>
