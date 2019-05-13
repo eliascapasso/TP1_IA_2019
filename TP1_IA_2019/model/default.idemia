@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idemia:AgentModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:idemia="utn.frsf.cidisi">
+  <Environment name="AmbienteZonaCostanera">
+    <EnvironmentState name="EstadoAmbiente">
+      <DataStructure name="mapa" type="Other"/>
+      <DataStructure name="posicionAgente" type="Other"/>
+      <DataStructure name="listaCostosProductos" type="Other"/>
+      <DataStructure name="listaCostosTraslados" type="Other"/>
+    </EnvironmentState>
+  </Environment>
+  <Agent name="Agente">
+    <Strategy xsi:type="idemia:Search" searchStrategy="AStarSearch"/>
+    <Goal name="ObjetivoAgente" value=" estadoAgente.getDestino().contains(estadoAgente.getPosicionAcual()) &amp;&amp; estadoAgente.getListaProductos().isEmpty()"/>
+    <AgentState name="EstadoAgente">
+      <DataStructure name="destino" type="String"/>
+      <DataStructure name="mapa" type="Other"/>
+      <DataStructure name="posicionActual"/>
+      <DataStructure name="listaIntersecciones"/>
+      <DataStructure name="listaInterseccionesBloqueadas"/>
+    </AgentState>
+  </Agent>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="TrasladarseA"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="Comprar"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="promocion"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="cortecalle"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="horariosupermercado"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="manifestacion"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent"/>
+</idemia:AgentModel>
