@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import dominio.Interseccion;
 import dominio.Mapa;
 import dominio.Producto;
+import dominio.Supermercado;
 
 /**
  * Represent the internal state of the Agent.
@@ -14,23 +15,15 @@ import dominio.Producto;
 public class EstadoAgente extends SearchBasedAgentState {
 	
 	//TODO: Setup Variables
-    private ArrayList<Interseccion> listaDestinos;
+    private ArrayList<Supermercado> listaDestinos;
     private Mapa mapa;
     private Interseccion posicionActual;
     private ArrayList<Interseccion> listaIntersecciones;
     private ArrayList<Interseccion> listaInterseccionesBloqueadas;
     private ArrayList<Producto> listaProductos;
+    private ArrayList<Producto> listaPromociones;
 	
 	public EstadoAgente() {
-    
-    	//TODO: Complete Method
-    	/*
-			// destino = initData0;
-			// mapa = initData1;
-			// posicionActual = initData2;
-			// listaIntersecciones = initData3;
-			// listaInterseccionesBloqueadas = initData4;
-        */
         this.initState();
     }
 
@@ -53,7 +46,7 @@ public class EstadoAgente extends SearchBasedAgentState {
     @Override
     public void updateState(Perception p) {
         
-        //TODO: Complete Method
+    	//AgentePerception perception = (AgentePerception) p;
     }
 
     /**
@@ -61,9 +54,70 @@ public class EstadoAgente extends SearchBasedAgentState {
      */
     @Override
     public void initState() {
-        
-	//TODO: Complete Method
-
+    	/////////// DESTINOS //////////
+    	this.listaDestinos = new ArrayList<Supermercado>();
+    	
+    	Supermercado alvear = new Supermercado();
+    	alvear.setNombre("alvear");
+    	alvear.setUbicacion(new Interseccion(85 ,"Av. Gral. Paz, Estaninlao Zeballos"));
+    	ArrayList<Producto> productosAlvear = new ArrayList<Producto>();
+    	//productosAlvear.add(new Producto())
+    	
+    	Supermercado patricia = new Supermercado();
+    	patricia.setNombre("patricia");
+    	patricia.setUbicacion(new Interseccion(138 ,"Antonia Godoy, Angel Casanello"));
+    	
+    	Supermercado kilbel = new Supermercado();
+    	kilbel.setNombre("kilbel");
+    	kilbel.setUbicacion(new Interseccion(11 ,"Av. Gral. Paz, Javier de la Rosa"));
+    	
+    	this.listaDestinos.add(alvear);
+    	this.listaDestinos.add(patricia);
+    	this.listaDestinos.add(kilbel);
+    	
+    	/////////// UBICACION AGENTE //////////
+    	
+    	this.posicionActual = new Interseccion();
+    	posicionActual.setIdInterseccion(100);
+    	posicionActual.setNombreInterseccion("Antonia Godoy, Juan Castelli");
+    	
+    	/////////// LISTA DE PRODUCTOS //////////
+    	this.listaProductos = new ArrayList<Producto>();
+    	Producto p1 = new Producto();
+    	p1.setNombre("p1");
+    	p1.setPrecio(0);
+    	
+    	Producto p2 = new Producto();
+    	p2.setNombre("p2");
+    	p2.setPrecio(0);
+    	
+    	Producto p3 = new Producto();
+    	p3.setNombre("p3");
+    	p3.setPrecio(0);
+    	
+    	Producto p4 = new Producto();
+    	p4.setNombre("p4");
+    	p4.setPrecio(0);
+    	
+    	Producto p5 = new Producto();
+    	p5.setNombre("p5");
+    	p5.setPrecio(0);
+    	
+    	Producto p6 = new Producto();
+    	p6.setNombre("p6");
+    	p6.setPrecio(0);
+    	
+    	Producto p7 = new Producto();
+    	p7.setNombre("p7");
+    	p7.setPrecio(0);
+    	
+    	Producto p8 = new Producto();
+    	p8.setNombre("p8");
+    	p8.setPrecio(0);
+    	
+    	Producto p9 = new Producto();
+    	p9.setNombre("p9");
+    	p9.setPrecio(0);
     }
 
     /**
@@ -100,10 +154,17 @@ public class EstadoAgente extends SearchBasedAgentState {
 	public void setListaProductos(ArrayList<Producto> listaProductos) {
 		this.listaProductos = listaProductos;
 	}
-     public ArrayList<Interseccion> getListaDestinos(){
+	public ArrayList<Producto> getListaPromociones() {
+		return listaPromociones;
+	}
+
+	public void setListaPromociones(ArrayList<Producto> listaPromociones) {
+		this.listaPromociones = listaPromociones;
+	}
+     public ArrayList<Supermercado> getListaDestinos(){
         return listaDestinos;
      }
-     public void setListaDestinos(ArrayList<Interseccion> arg){
+     public void setListaDestinos(ArrayList<Supermercado> arg){
         listaDestinos = arg;
      }
      public Mapa getmapa(){

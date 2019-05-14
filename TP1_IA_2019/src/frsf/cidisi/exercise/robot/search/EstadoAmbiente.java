@@ -1,5 +1,11 @@
 package frsf.cidisi.exercise.robot.search;
 
+import java.util.ArrayList;
+
+import dominio.Interseccion;
+import dominio.Mapa;
+import dominio.Producto;
+import dominio.Supermercado;
 import frsf.cidisi.faia.state.EnvironmentState;
 
 /**
@@ -8,20 +14,18 @@ import frsf.cidisi.faia.state.EnvironmentState;
 public class EstadoAmbiente extends EnvironmentState {
 	
 	//TODO: Setup Variables
-    //private Other mapa;
-    //private Other posicionAgente;
-    //private Other listaCostosProductos;
-    //private Other listaCostosTraslados;
+    private Mapa mapa;
+    private Interseccion posicionAgente;
+    private ArrayList<Supermercado> listaSupermercados;
+    private ArrayList<Interseccion> listaInterseccionesBloqueadas;
+    private ArrayList<Producto> listaPromociones;
 	
     public EstadoAmbiente() {
         
-        //TODO: Complete Method
-    	/*
-			// mapa = initData0;
-			// posicionAgente = initData1;
-			// listaCostosProductos = initData2;
-			// listaCostosTraslados = initData3;
-        */
+			 mapa = new Mapa();
+			 posicionAgente = new Interseccion();
+			 listaSupermercados = new ArrayList<Supermercado>();
+        
         this.initState();
     }
 
@@ -46,34 +50,46 @@ public class EstadoAmbiente extends EnvironmentState {
         return str;
     }
 
-	//TODO: Complete this section with agent-specific methods
-    // The following methods are agent-specific:
-	
-//     public Other getmapa(){
-//        return mapa;
-//     }
-//     public void setmapa(Other arg){
-//        mapa = arg;
-//     }
-//     public Other getposicionAgente(){
-//        return posicionAgente;
-//     }
-//     public void setposicionAgente(Other arg){
-//        posicionAgente = arg;
-//     }
-//     public Other getlistaCostosProductos(){
-//        return listaCostosProductos;
-//     }
-//     public void setlistaCostosProductos(Other arg){
-//        listaCostosProductos = arg;
-//     }
-//     public Other getlistaCostosTraslados(){
-//        return listaCostosTraslados;
-//     }
-//     public void setlistaCostosTraslados(Other arg){
-//        listaCostosTraslados = arg;
-//     }
-	
+	public Mapa getMapa() {
+		return mapa;
+	}
 
+	public void setMapa(Mapa mapa) {
+		this.mapa = mapa;
+	}
+
+	public Interseccion getPosicionAgente() {
+		return posicionAgente;
+	}
+
+	public void setPosicionAgente(Interseccion posicionAgente) {
+		this.posicionAgente = posicionAgente;
+	}
+
+	public ArrayList<Supermercado> getListaSupermercados() {
+		return listaSupermercados;
+	}
+
+	public void setListaSupermercados(ArrayList<Supermercado> listaSupermercados) {
+		this.listaSupermercados = listaSupermercados;
+	}
+
+	public ArrayList<Interseccion> getListaInterseccionesBloqueadas() {
+		return listaInterseccionesBloqueadas;
+	}
+
+	public void setListaInterseccionesBloqueadas(
+			ArrayList<Interseccion> listaInterseccionesBloqueadas) {
+		this.listaInterseccionesBloqueadas = listaInterseccionesBloqueadas;
+	}
+
+	public ArrayList<Producto> getListaPromociones() {
+		return listaPromociones;
+	}
+
+	public void setListaPromociones(ArrayList<Producto> listaPromociones) {
+		this.listaPromociones = listaPromociones;
+	}
+	
 }
 

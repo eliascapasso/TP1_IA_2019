@@ -1,16 +1,23 @@
 package dominio;
 
 public class Interseccion {
-	private String idInterseccion;
+	private int idInterseccion;
 	private String nombreInterseccion;
 	public Interseccion() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public String getIdInterseccion() {
+	
+	public Interseccion(int idInterseccion, String nombreInterseccion) {
+		super();
+		this.idInterseccion = idInterseccion;
+		this.nombreInterseccion = nombreInterseccion;
+	}
+
+	public int getIdInterseccion() {
 		return idInterseccion;
 	}
-	public void setIdInterseccion(String idInterseccion) {
+	public void setIdInterseccion(int idInterseccion) {
 		this.idInterseccion = idInterseccion;
 	}
 	public String getNombreInterseccion() {

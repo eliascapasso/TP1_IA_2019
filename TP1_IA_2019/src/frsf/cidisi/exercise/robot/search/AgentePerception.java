@@ -1,5 +1,9 @@
 package frsf.cidisi.exercise.robot.search;
 
+import java.util.ArrayList;
+
+import dominio.Interseccion;
+import dominio.Producto;
 import frsf.cidisi.faia.agent.Agent;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
@@ -11,14 +15,13 @@ public class AgentePerception extends Perception {
 	
 	
 	//TODO: Setup Sensors
-	private int promocion;
-	private int cortecalle;
-	private int horariosupermercado;
-	private int manifestacion;
-	private int PerceptionName;
+	private boolean promocion;
+	private boolean cortecalle;
+	private boolean manifestacion;
+	private boolean PerceptionName;
+	private ArrayList<Producto> listaPromociones;
+	private ArrayList<Interseccion> listaInterseccionesBloqueadas;
 	
- 
-
     public  AgentePerception() {
     	//TODO: Complete Method
     }
@@ -33,14 +36,10 @@ public class AgentePerception extends Perception {
     @Override
     public void initPerception(Agent agentIn, Environment environmentIn) {
     	
-    	//TODO: Complete Method
-        
-        //Agente agent = (Agente) agentIn;
-        //AmbienteZonaCostanera environment = (AmbienteZonaCostanera) environmentIn;
-        //EstadoAmbiente environmentState =
-        //        environment.getEnvironmentState();
+        Agente agent = (Agente) agentIn;
+        AmbienteZonaCostanera environment = (AmbienteZonaCostanera) environmentIn;
+        EstadoAmbiente environmentState = environment.getEnvironmentState();
        
-        
     }
     
     @Override
@@ -52,39 +51,54 @@ public class AgentePerception extends Perception {
         return str.toString();
     }
 
-    // The following methods are agent-specific:
-    //TODO: Complete this section with the agent-specific methods
+	public boolean isPromocion() {
+		return promocion;
+	}
+
+	public void setPromocion(boolean promocion) {
+		this.promocion = promocion;
+	}
+
+	public boolean isCortecalle() {
+		return cortecalle;
+	}
+
+	public void setCortecalle(boolean cortecalle) {
+		this.cortecalle = cortecalle;
+	}
+
+	public boolean isManifestacion() {
+		return manifestacion;
+	}
+
+	public void setManifestacion(boolean manifestacion) {
+		this.manifestacion = manifestacion;
+	}
+
+	public boolean isPerceptionName() {
+		return PerceptionName;
+	}
+
+	public void setPerceptionName(boolean perceptionName) {
+		PerceptionName = perceptionName;
+	}
+
+	public ArrayList<Producto> getListaPromociones() {
+		return listaPromociones;
+	}
+
+	public void setListaPromociones(ArrayList<Producto> listaPromociones) {
+		this.listaPromociones = listaPromociones;
+	}
+
+	public ArrayList<Interseccion> getListaInterseccionesBloqueadas() {
+		return listaInterseccionesBloqueadas;
+	}
+
+	public void setListaInterseccionesBloqueadas(
+			ArrayList<Interseccion> listaInterseccionesBloqueadas) {
+		this.listaInterseccionesBloqueadas = listaInterseccionesBloqueadas;
+	}
 	
-     public int getpromocion(){
-        return promocion;
-     }
-     public void setpromocion(int arg){
-        this.promocion = arg;
-     }
-     public int getcortecalle(){
-        return cortecalle;
-     }
-     public void setcortecalle(int arg){
-        this.cortecalle = arg;
-     }
-     public int gethorariosupermercado(){
-        return horariosupermercado;
-     }
-     public void sethorariosupermercado(int arg){
-        this.horariosupermercado = arg;
-     }
-     public int getmanifestacion(){
-        return manifestacion;
-     }
-     public void setmanifestacion(int arg){
-        this.manifestacion = arg;
-     }
-     public int getPerceptionName(){
-        return PerceptionName;
-     }
-     public void setPerceptionName(int arg){
-        this.PerceptionName = arg;
-     }
 	
-   
 }

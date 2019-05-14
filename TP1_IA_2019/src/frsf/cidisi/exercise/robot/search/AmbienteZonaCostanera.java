@@ -1,5 +1,9 @@
 package frsf.cidisi.exercise.robot.search;
 
+import java.util.ArrayList;
+
+import dominio.Interseccion;
+import dominio.Producto;
 import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
@@ -25,9 +29,17 @@ public class AmbienteZonaCostanera extends Environment {
     public  AgentePerception getPercept() {
         // Create a new perception to return
          AgentePerception perception = new AgentePerception();
+         
+         Interseccion posicionAgente = this.getEnvironmentState().getPosicionAgente();
 		
-		//TODO : Set the perceptions sensors
+         perception.getListaInterseccionesBloqueadas().clear();
+         perception.getListaPromociones().clear();
+         
+        ArrayList<Interseccion> listaInterseccionesBloqueadas = this.getEnvironmentState().getListaInterseccionesBloqueadas();
+        ArrayList<Producto> listaPromociones = this.getEnvironmentState().getListaPromociones();
         
+        perception.setListaPromociones(listaPromociones);
+        perception.setListaInterseccionesBloqueadas(listaInterseccionesBloqueadas);
         // Return the perception
         return perception;
     }
