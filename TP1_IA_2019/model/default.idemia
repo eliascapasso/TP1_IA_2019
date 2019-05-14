@@ -17,6 +17,7 @@
       <DataStructure name="posicionActual" type="Other"/>
       <DataStructure name="listaIntersecciones" type="Other"/>
       <DataStructure name="listaInterseccionesBloqueadas" type="Other"/>
+      <DataStructure name="listaProductos" type="Other"/>
     </AgentState>
   </Agent>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="TrasladarseA"/>

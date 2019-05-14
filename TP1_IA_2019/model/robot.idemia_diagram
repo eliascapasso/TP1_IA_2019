@@ -61,6 +61,15 @@
             <element xmi:type="idemia:DataStructure" href="default.idemia#//@Agent/@AgentState/@DataStructure.4"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yLYEUXXQEemLEqJJHisGpA"/>
           </children>
+          <children xmi:type="notation:Shape" xmi:id="_DbH-wHXaEemLEqJJHisGpA" type="3002" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_DbH-wnXaEemLEqJJHisGpA" type="5001"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_DbH-w3XaEemLEqJJHisGpA" type="5002">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_DbH-xHXaEemLEqJJHisGpA"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_DbH-xXXaEemLEqJJHisGpA" type="5003"/>
+            <element xmi:type="idemia:DataStructure" href="default.idemia#//@Agent/@AgentState/@DataStructure.5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DbH-wXXaEemLEqJJHisGpA"/>
+          </children>
           <styles xmi:type="notation:SortingStyle" xmi:id="_uw92BFlgEeCS7JqT4EAQYw"/>
           <styles xmi:type="notation:FilteringStyle" xmi:id="_uw92BVlgEeCS7JqT4EAQYw"/>
         </children>

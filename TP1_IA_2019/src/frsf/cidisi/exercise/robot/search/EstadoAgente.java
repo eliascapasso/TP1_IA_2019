@@ -2,6 +2,11 @@ package frsf.cidisi.exercise.robot.search;
 
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
+import java.util.ArrayList;
+
+import dominio.Interseccion;
+import dominio.Mapa;
+import dominio.Producto;
 
 /**
  * Represent the internal state of the Agent.
@@ -9,14 +14,14 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 public class EstadoAgente extends SearchBasedAgentState {
 	
 	//TODO: Setup Variables
-    private String destino;
-    //private Other mapa;
-    private int posicionActual;
-    private int listaIntersecciones;
-    private int listaInterseccionesBloqueadas;
+    private ArrayList<Interseccion> listaDestinos;
+    private Mapa mapa;
+    private Interseccion posicionActual;
+    private ArrayList<Interseccion> listaIntersecciones;
+    private ArrayList<Interseccion> listaInterseccionesBloqueadas;
+    private ArrayList<Producto> listaProductos;
 	
-
-    public EstadoAgente() {
+	public EstadoAgente() {
     
     	//TODO: Complete Method
     	/*
@@ -88,34 +93,41 @@ public class EstadoAgente extends SearchBasedAgentState {
     //TODO: Complete this section with agent-specific methods
     // The following methods are agent-specific:
    	
-     public String getdestino(){
-        return destino;
+    public ArrayList<Producto> getListaProductos() {
+		return listaProductos;
+	}
+
+	public void setListaProductos(ArrayList<Producto> listaProductos) {
+		this.listaProductos = listaProductos;
+	}
+     public ArrayList<Interseccion> getListaDestinos(){
+        return listaDestinos;
      }
-     public void setdestino(String arg){
-        destino = arg;
+     public void setListaDestinos(ArrayList<Interseccion> arg){
+        listaDestinos = arg;
      }
-//     public Other getmapa(){
-//        return mapa;
-//     }
-//     public void setmapa(Other arg){
-//        mapa = arg;
-//     }
-     public int getposicionActual(){
+     public Mapa getmapa(){
+        return mapa;
+     }
+     public void setmapa(Mapa arg){
+        mapa = arg;
+     }
+     public Interseccion getposicionActual(){
         return posicionActual;
      }
-     public void setposicionActual(int arg){
+     public void setposicionActual(Interseccion arg){
         posicionActual = arg;
      }
-     public int getlistaIntersecciones(){
+     public ArrayList<Interseccion> getlistaIntersecciones(){
         return listaIntersecciones;
      }
-     public void setlistaIntersecciones(int arg){
+     public void setlistaIntersecciones(ArrayList<Interseccion> arg){
         listaIntersecciones = arg;
      }
-     public int getlistaInterseccionesBloqueadas(){
+     public ArrayList<Interseccion> getlistaInterseccionesBloqueadas(){
         return listaInterseccionesBloqueadas;
      }
-     public void setlistaInterseccionesBloqueadas(int arg){
+     public void setlistaInterseccionesBloqueadas(ArrayList<Interseccion> arg){
         listaInterseccionesBloqueadas = arg;
      }
 	

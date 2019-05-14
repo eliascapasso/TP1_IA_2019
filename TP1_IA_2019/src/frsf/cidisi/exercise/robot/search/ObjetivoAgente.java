@@ -9,12 +9,9 @@ public class ObjetivoAgente extends GoalTest {
 
     @Override
     public boolean isGoalState (AgentState agentState) {
-    
-    	// TODO: Complete Method
-        if  (true) //( estadoAgente.getDestino().contains(estadoAgente.getPosicionAcual()) && estadoAgente.getListaProductos().isEmpty())
-        	{
-            return true;
-        	}
-        return false;
-	}
+    	EstadoAgente estadoAgente = (EstadoAgente) agentState;
+    	
+    	return (estadoAgente.getListaDestinos().contains(estadoAgente.getposicionActual())) 
+    			&& (estadoAgente.getListaProductos().size() == 0);
+    }
 }
