@@ -3,6 +3,7 @@ package frsf.cidisi.exercise.robot.search;
 import java.util.ArrayList;
 
 import dominio.Interseccion;
+import dominio.Cuadra;
 import dominio.Producto;
 import frsf.cidisi.faia.agent.Agent;
 import frsf.cidisi.faia.agent.Perception;
@@ -15,15 +16,16 @@ public class AgentePerception extends Perception {
 	
 	
 	//TODO: Setup Sensors
-	private boolean promocion;
-	private boolean cortecalle;
-	private boolean manifestacion;
-	private boolean PerceptionName;
+//	private boolean promocion;
+//	private boolean cortecalle;
+//	private boolean manifestacion;
+//	private boolean PerceptionName;
 	private ArrayList<Producto> listaPromociones;
-	private ArrayList<Interseccion> listaInterseccionesBloqueadas;
+	private ArrayList<Cuadra> listaCuadrasBloqueadas;
 	
     public  AgentePerception() {
-    	//TODO: Complete Method
+    	listaPromociones = new ArrayList<Producto>();
+    	listaCuadrasBloqueadas = new ArrayList<Cuadra>();
     }
 
     public AgentePerception(Agent agent, Environment environment) {
@@ -35,11 +37,16 @@ public class AgentePerception extends Perception {
      */
     @Override
     public void initPerception(Agent agentIn, Environment environmentIn) {
-    	
         Agente agent = (Agente) agentIn;
         AmbienteZonaCostanera environment = (AmbienteZonaCostanera) environmentIn;
         EstadoAmbiente environmentState = environment.getEnvironmentState();
        
+        Interseccion esquinaInicial = environmentState.getPosicionAgente();
+        
+        for(Cuadra c: environment.getEnvironmentState().getListaCuadrasBloqueadas())
+			if(!listaCuadrasBloqueadas.contains(c))
+				listaCuadrasBloqueadas.add(c);
+        //environmentState.contains(esquinaInicial,listaCalleBloqueadas,listaCalleDemoradas);
     }
     
     @Override
@@ -51,38 +58,6 @@ public class AgentePerception extends Perception {
         return str.toString();
     }
 
-	public boolean isPromocion() {
-		return promocion;
-	}
-
-	public void setPromocion(boolean promocion) {
-		this.promocion = promocion;
-	}
-
-	public boolean isCortecalle() {
-		return cortecalle;
-	}
-
-	public void setCortecalle(boolean cortecalle) {
-		this.cortecalle = cortecalle;
-	}
-
-	public boolean isManifestacion() {
-		return manifestacion;
-	}
-
-	public void setManifestacion(boolean manifestacion) {
-		this.manifestacion = manifestacion;
-	}
-
-	public boolean isPerceptionName() {
-		return PerceptionName;
-	}
-
-	public void setPerceptionName(boolean perceptionName) {
-		PerceptionName = perceptionName;
-	}
-
 	public ArrayList<Producto> getListaPromociones() {
 		return listaPromociones;
 	}
@@ -91,14 +66,12 @@ public class AgentePerception extends Perception {
 		this.listaPromociones = listaPromociones;
 	}
 
-	public ArrayList<Interseccion> getListaInterseccionesBloqueadas() {
-		return listaInterseccionesBloqueadas;
+	public ArrayList<Cuadra> getListaCuadrasBloqueadas() {
+		return listaCuadrasBloqueadas;
 	}
 
-	public void setListaInterseccionesBloqueadas(
-			ArrayList<Interseccion> listaInterseccionesBloqueadas) {
-		this.listaInterseccionesBloqueadas = listaInterseccionesBloqueadas;
+	public void setListaCuadrasBloqueadas(ArrayList<Cuadra> listaCuadrasBloqueadas) {
+		this.listaCuadrasBloqueadas = listaCuadrasBloqueadas;
 	}
-	
 	
 }

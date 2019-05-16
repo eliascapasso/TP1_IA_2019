@@ -2,6 +2,7 @@ package frsf.cidisi.exercise.robot.search;
 
 import java.util.ArrayList;
 
+import dominio.Cuadra;
 import dominio.Interseccion;
 import dominio.Producto;
 import frsf.cidisi.faia.agent.Action;
@@ -32,15 +33,13 @@ public class AmbienteZonaCostanera extends Environment {
          
          Interseccion posicionAgente = this.getEnvironmentState().getPosicionAgente();
 		
-         perception.getListaInterseccionesBloqueadas().clear();
+         perception.getListaCuadrasBloqueadas().clear();
          perception.getListaPromociones().clear();
          
-        ArrayList<Interseccion> listaInterseccionesBloqueadas = this.getEnvironmentState().getListaInterseccionesBloqueadas();
-        ArrayList<Producto> listaPromociones = this.getEnvironmentState().getListaPromociones();
+        ArrayList<Cuadra> listaCuadrasBloqueadas = this.getEnvironmentState().getListaCuadrasBloqueadas();
         
-        perception.setListaPromociones(listaPromociones);
-        perception.setListaInterseccionesBloqueadas(listaInterseccionesBloqueadas);
-        // Return the perception
+        //perception.setListaCuadrasBloqueadas(listaCuadrasBloqueadas);
+        
         return perception;
     }
 

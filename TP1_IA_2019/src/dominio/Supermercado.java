@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Supermercado {
 	private String nombre;
 	private ArrayList<Producto> listaProductos;
+	private ArrayList<Producto> listaPromociones;
 	private Interseccion ubicacion;
 	
 	public Supermercado() {
@@ -33,6 +34,14 @@ public class Supermercado {
 
 	public void setUbicacion(Interseccion ubicacion) {
 		this.ubicacion = ubicacion;
+	}
+
+	public ArrayList<Producto> getListaPromociones() {
+		return listaPromociones;
+	}
+
+	public void setListaPromociones(ArrayList<Producto> listaPromociones) {
+		this.listaPromociones = listaPromociones;
 	}
 	
 	

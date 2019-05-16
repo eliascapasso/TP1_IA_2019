@@ -27,5 +27,7 @@ public class Interseccion {
 		this.nombreInterseccion = nombreInterseccion;
 	}
 	
-	
+	public String toString() {
+        return this.idInterseccion + " - " + this.nombreInterseccion;
+    } 
 }

@@ -1,11 +1,18 @@
 package dominio;
 
-public class Calle {
+public class Cuadra {
+	private String nombreCalle;
 	private Interseccion origen;
 	private Interseccion destino;
-	public Calle() {
+	public Cuadra() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	public Cuadra(String nombreCalle, Interseccion origen, Interseccion destino) {
+		super();
+		this.nombreCalle = nombreCalle;
+		this.origen = origen;
+		this.destino = destino;
 	}
 	public Interseccion getOrigen() {
 		return origen;
@@ -19,6 +26,11 @@ public class Calle {
 	public void setDestino(Interseccion destino) {
 		this.destino = destino;
 	}
-	
+	public String getNombreCalle() {
+		return nombreCalle;
+	}
+	public void setNombreCalle(String nombreCalle) {
+		this.nombreCalle = nombreCalle;
+	}
 	
 }

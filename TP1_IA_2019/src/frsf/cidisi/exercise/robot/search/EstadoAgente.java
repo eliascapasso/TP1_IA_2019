@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import dominio.Interseccion;
 import dominio.Mapa;
+import dominio.Cuadra;
 import dominio.Producto;
 import dominio.Supermercado;
 
@@ -18,10 +19,9 @@ public class EstadoAgente extends SearchBasedAgentState {
     private ArrayList<Supermercado> listaDestinos;
     private Mapa mapa;
     private Interseccion posicionActual;
-    private ArrayList<Interseccion> listaIntersecciones;
-    private ArrayList<Interseccion> listaInterseccionesBloqueadas;
+    private ArrayList<Cuadra> listaCuadrasBloqueadas;
     private ArrayList<Producto> listaProductos;
-    private ArrayList<Producto> listaPromociones;
+    private ArrayList<Interseccion> rutaAgente;
 	
 	public EstadoAgente() {
         this.initState();
@@ -54,32 +54,18 @@ public class EstadoAgente extends SearchBasedAgentState {
      */
     @Override
     public void initState() {
+    	/////////// MAPA //////////
+    	mapa = Mapa.crearMapa();
+    	
     	/////////// DESTINOS //////////
-    	this.listaDestinos = new ArrayList<Supermercado>();
-    	
-    	Supermercado alvear = new Supermercado();
-    	alvear.setNombre("alvear");
-    	alvear.setUbicacion(new Interseccion(85 ,"Av. Gral. Paz, Estaninlao Zeballos"));
-    	ArrayList<Producto> productosAlvear = new ArrayList<Producto>();
-    	//productosAlvear.add(new Producto())
-    	
-    	Supermercado patricia = new Supermercado();
-    	patricia.setNombre("patricia");
-    	patricia.setUbicacion(new Interseccion(138 ,"Antonia Godoy, Angel Casanello"));
-    	
-    	Supermercado kilbel = new Supermercado();
-    	kilbel.setNombre("kilbel");
-    	kilbel.setUbicacion(new Interseccion(11 ,"Av. Gral. Paz, Javier de la Rosa"));
-    	
-    	this.listaDestinos.add(alvear);
-    	this.listaDestinos.add(patricia);
-    	this.listaDestinos.add(kilbel);
+    	this.listaDestinos = mapa.getListaDestinos();
     	
     	/////////// UBICACION AGENTE //////////
+    	this.posicionActual = mapa.getPosicionOrigenAgente();
     	
-    	this.posicionActual = new Interseccion();
-    	posicionActual.setIdInterseccion(100);
-    	posicionActual.setNombreInterseccion("Antonia Godoy, Juan Castelli");
+    	/////////// RUTA DEL AGENTE //////////
+    	rutaAgente = new ArrayList<Interseccion>();
+    	rutaAgente.add(mapa.getPosicionOrigenAgente());
     	
     	/////////// LISTA DE PRODUCTOS //////////
     	this.listaProductos = new ArrayList<Producto>();
@@ -118,6 +104,10 @@ public class EstadoAgente extends SearchBasedAgentState {
     	Producto p9 = new Producto();
     	p9.setNombre("p9");
     	p9.setPrecio(0);
+    	
+    	/////////// CUADRAS BLOQUEADAS //////////
+    	listaCuadrasBloqueadas = new ArrayList<Cuadra>();
+    	listaCuadrasBloqueadas.addAll(Mapa.listaCuadrasBloqueadas);
     }
 
     /**
@@ -127,7 +117,12 @@ public class EstadoAgente extends SearchBasedAgentState {
     public String toString() {
         String str = "";
 
-        //TODO: Complete Method
+        str = "\n";
+        str += "Posicion del agente: ";
+        str += posicionActual.toString()+"\n";
+        str += "Ruta agente: ";
+        str += rutaAgente.toString();
+        str += "\nCuadras Bloqueadas: " + this.getlistaCuadrasBloqueadas().toString() + "\n";
 
         return str;
     }
@@ -154,13 +149,6 @@ public class EstadoAgente extends SearchBasedAgentState {
 	public void setListaProductos(ArrayList<Producto> listaProductos) {
 		this.listaProductos = listaProductos;
 	}
-	public ArrayList<Producto> getListaPromociones() {
-		return listaPromociones;
-	}
-
-	public void setListaPromociones(ArrayList<Producto> listaPromociones) {
-		this.listaPromociones = listaPromociones;
-	}
      public ArrayList<Supermercado> getListaDestinos(){
         return listaDestinos;
      }
@@ -179,17 +167,11 @@ public class EstadoAgente extends SearchBasedAgentState {
      public void setposicionActual(Interseccion arg){
         posicionActual = arg;
      }
-     public ArrayList<Interseccion> getlistaIntersecciones(){
-        return listaIntersecciones;
+     public ArrayList<Cuadra> getlistaCuadrasBloqueadas(){
+        return listaCuadrasBloqueadas;
      }
-     public void setlistaIntersecciones(ArrayList<Interseccion> arg){
-        listaIntersecciones = arg;
-     }
-     public ArrayList<Interseccion> getlistaInterseccionesBloqueadas(){
-        return listaInterseccionesBloqueadas;
-     }
-     public void setlistaInterseccionesBloqueadas(ArrayList<Interseccion> arg){
-        listaInterseccionesBloqueadas = arg;
+     public void setlistaCuadrasBloqueadas(ArrayList<Cuadra> arg){
+    	 listaCuadrasBloqueadas = arg;
      }
 	
 }

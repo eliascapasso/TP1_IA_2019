@@ -1,9 +1,11 @@
 package frsf.cidisi.exercise.robot.search;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import dominio.Interseccion;
 import dominio.Mapa;
+import dominio.Cuadra;
 import dominio.Producto;
 import dominio.Supermercado;
 import frsf.cidisi.faia.state.EnvironmentState;
@@ -17,8 +19,7 @@ public class EstadoAmbiente extends EnvironmentState {
     private Mapa mapa;
     private Interseccion posicionAgente;
     private ArrayList<Supermercado> listaSupermercados;
-    private ArrayList<Interseccion> listaInterseccionesBloqueadas;
-    private ArrayList<Producto> listaPromociones;
+    private ArrayList<Cuadra> listaCuadrasBloqueadas;
 	
     public EstadoAmbiente() {
         
@@ -34,8 +35,13 @@ public class EstadoAmbiente extends EnvironmentState {
      */
     @Override
     public void initState() {
-
-        //TODO: Complete Method
+    	this.mapa = Mapa.crearMapa();
+    	
+    	this.posicionAgente = Mapa.posicionOrigenAgente;
+    	
+    	this.listaSupermercados = Mapa.listaDestinos;
+    	
+    	this.listaCuadrasBloqueadas = Mapa.listaCuadrasBloqueadas;
     }
 
     /**
@@ -45,7 +51,10 @@ public class EstadoAmbiente extends EnvironmentState {
     public String toString() {
         String str = "";
 
-        //TODO: Complete Method
+        str += "Estado del Ambiente:\n";
+        
+        str += "Posicion del agente: ";
+        str = posicionAgente.toString();
 
         return str;
     }
@@ -74,22 +83,13 @@ public class EstadoAmbiente extends EnvironmentState {
 		this.listaSupermercados = listaSupermercados;
 	}
 
-	public ArrayList<Interseccion> getListaInterseccionesBloqueadas() {
-		return listaInterseccionesBloqueadas;
+	public ArrayList<Cuadra> getListaCuadrasBloqueadas() {
+		return listaCuadrasBloqueadas;
 	}
 
-	public void setListaInterseccionesBloqueadas(
-			ArrayList<Interseccion> listaInterseccionesBloqueadas) {
-		this.listaInterseccionesBloqueadas = listaInterseccionesBloqueadas;
+	public void setListaCuadrasBloqueadas(
+			ArrayList<Cuadra> listaCuadrasBloqueadas) {
+		this.listaCuadrasBloqueadas = listaCuadrasBloqueadas;
 	}
-
-	public ArrayList<Producto> getListaPromociones() {
-		return listaPromociones;
-	}
-
-	public void setListaPromociones(ArrayList<Producto> listaPromociones) {
-		this.listaPromociones = listaPromociones;
-	}
-	
 }
 
