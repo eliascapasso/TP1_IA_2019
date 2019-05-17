@@ -19,7 +19,7 @@ public class ObjetivoAgente extends GoalTest {
     	if(!posicionAlvear.equals(estadoAgente.getPosicionActual())) return false;
     	if(!posicionPatricia.equals(estadoAgente.getPosicionActual())) return false;
     	if(!posicionKilbel.equals(estadoAgente.getPosicionActual())) return false;
-    	if(!(estadoAgente.getListaProductos().size() == 0)) return false;
+    	//if(!(estadoAgente.getListaProductos().size() == 0)) return false;
     	
     	return true;
     }

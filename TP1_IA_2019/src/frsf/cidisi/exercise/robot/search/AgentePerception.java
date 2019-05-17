@@ -42,8 +42,8 @@ public class AgentePerception extends Perception {
         AmbienteZonaCostanera environment = (AmbienteZonaCostanera) environmentIn;
         EstadoAmbiente estadoAmbiente = environment.getEnvironmentState();
        
-        listaPromocionesSupermercados.addAll(estadoAmbiente.getListaSupermercados());
-        listaCuadrasBloqueadas.addAll(estadoAmbiente.getListaCuadrasBloqueadas());
+        listaPromocionesSupermercados = estadoAmbiente.getListaSupermercados();
+        listaCuadrasBloqueadas = estadoAmbiente.getListaCuadrasBloqueadas();
     }
     
     @Override

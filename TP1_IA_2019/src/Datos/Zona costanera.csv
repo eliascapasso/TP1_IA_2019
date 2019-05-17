@@ -1,0 +1,810 @@
+I;1;Av. Gral. Paz, Regimiento 12 de infanter¡a;409;46
+I;2;Tacuar¡, Regimiento 12 de infanter¡a;440;51
+I;3;Piedras, Regimiento 12 de infanter¡a.;497;61
+I;4; Antonia Godoy, Regimiento 12 de infanter¡a.;558;71
+I;5;Patricio Cullen, Regimiento 12 de infanter¡a.;615;83
+I;6;Cngo Echague, Regimiento 12 de infanter¡a.;679;93
+I;7;Talcahuano, Regimiento 12 de infanter¡a.;743;103
+I;8;Defensa, Regimiento 12 de infanter¡a.;801;115
+I;9;Riobamba, Regimiento 12 de infanter¡a.;860;128
+I;10;Italia, Regimiento 12 de infanter¡a.;915;136
+I;11;Av. Gral. Paz, Javier de la Rosa;397;93
+I;12;Tacuar¡, Javier de la Rosa;428;97
+I;13;Piedras, Javier de la Rosa;486;108
+I;14;Antonia Godoy, Javier de la Rosa;543;120
+I;15;Patricio Cullen, Javier de la Rosa;603;131
+I;16;Cngo Echague, Javier de la Rosa;663;141
+I;17;Talcahuano, Javier de la Rosa;726;150
+I;18;Defensa, Javier de la Rosa;788;162
+I;19;Riobamba, Javier de la Rosa;847;172
+I;20;Av. Almirante Brown, Javier de la Rosa;908;184
+I;21;Av. Gral. Paz, Padre Genesio;384;140
+I;22;Tacuar¡, Padre Genesio;411;145
+I;23;Piedras, Padre Genesio;474;155
+I;24;Antonia Godoy, Padre Genesio;532;166
+I;25;Patricio Cullen, Padre Genesio;591;178
+I;26;Cngo Echague, Padre Genesio;650;189
+I;27;Talcahuano, Padre Genesio;713;196
+I;28;Defensa, Padre Genesio;772;207
+I;29;Riobamba, Padre Genesio;833;220
+I;30;Av. Almirante Brown, Padre Genesio;891;230
+I;31;Antonia Godoy, Pje. De Andrea;527;187
+I;32;Patricio Cullen, Pje. De Andrea;585;196
+I;33;Av. Gral. Paz, Cardenal Fasolino;365;184
+I;34;Tacuar¡, Cardenal Fasolino;398;193
+I;35;Piedras, Cardenal Fasolino;458;202
+I;36;Antonia Godoy, Cardenal Fasolino;520;211
+I;37;Patricio Cullen, Cardenal Fasolino;578;221
+I;38;Cngo Echague, Cardenal Fasolino;639;232
+I;39;Talcahuano, Cardenal Fasolino;699;242
+I;40;Defensa, Cardenal Fasolino;758;254
+I;41;Riobamba, Cardenal Fasolino;819;265
+I;42;Av. Almirante Brown, Cardenal Fasolino;882;275
+I;43;Av. Gral. Paz, Alberti;344;226
+I;44;Tacuar¡, Alberti;385;231
+I;45;Piedras, Alberti;445;241
+I;46;Antonia Godoy, Alberti;509;249
+I;47;Juan Maciel, Alberti;535;257
+I;48;Patricio Cullen, Alberti;567;256
+I;49;Cngo Echague, Alberti;627;259
+I;50;Talcahuano, Alberti;687;283
+I;51;Defensa, Alberti;745;294
+I;52;Riobamba, Alberti;807;306
+I;53;Av. Almirante Brown, Alberti;869;316
+I;54;Av. Gral. Paz, Obispo Pr¡ncipe;321;263
+I;55;Tacuar¡, Obispo Pr¡ncipe;373;275
+I;56;Piedras, Obispo Pr¡ncipe;434;284
+I;57;Antonia Godoy, Obispo Pr¡ncipe;494;292
+I;58;Juan Maciel, Obispo Pr¡ncipe;523;299
+I;59;Patricio Cullen Obispo Pr¡ncipe;554;305
+I;60;Cngo Echague, Obispo Pr¡ncipe;612;313
+I;61;Talcahuano, Obispo Pr¡ncipe;674;325
+I;62;Defensa, Obispo Pr¡ncipe;735;336
+I;63;Riobamba, Obispo Pr¡ncipe;794;344
+I;64;Av. Almirante Brown, Obispo Pr¡ncipe;859;355
+I;65;Av. Gral. Paz, Espora;292;301
+I;66;Tacuar¡, Espora;360;314
+I;67;Piedras, Espora;420;326
+I;68;Antonia Godoy, Espora;478;336
+I;69;Patricio Cullen, Espora;541;346
+I;70;Cngo Echague, Espora;602;357
+I;71;Talcahuano, Espora;660;366
+I;72;Defensa, Espora;721;377
+I;73;Riobamba, Espora;781;387
+I;74;Av. Almirante Brown, Espora;846;397
+I;75;Av. Gral. Paz, Obispo Boneo;262;350
+I;76;Tacuar¡, Obispo Boneo;346;363
+I;77;Piedras, Obispo Boneo;406;375
+I;78;Antonia Godoy, Obispo Boneo;464;385
+I;79;Patricio Cullen, Obispo Boneo;526;398
+I;80;Cngo Echague, Obispo Boneo;584;408
+I;81;Talcahuano, Obispo Boneo;644;419
+I;82;Defensa, Obispo Boneo;705;432
+I;83;Riobamba, Obispo Boneo;765;440
+I;84;Av. Almirante Brown, Obispo Boneo;827;453
+I;85;Av. Gral. Paz, Estanislao Zeballos;239;391
+I;86;V‚lez Sarsfield, Estanislao Zeballos;273;399
+I;87;Tacuar¡, Estanislao Zeballos;331;411
+I;88;Piedras, Estanislao Zeballos;392;421
+I;89;Antonia Godoy, Estanislao Zeballos;451;431
+I;90;Patricio Cullen, Estanislao Zeballos;511;443
+I;91;Cngo. Echague, Estanislao Zeballos;570;455
+I;92;Talcahuano, Estanislao Zeballos;631;464
+I;93;Defensa, Estanislao Zeballos;693;476
+I;94;Riobamba, Estanislao Zeballos;751;487
+I;95;Av. Almirante Brown, Estanislao Zeballos;802;497
+I;96;Av. Gral. Paz, Juan Castelli;213;435
+I;97;V‚lez Sarsfield, Juan Castelli;257;443
+I;98;Tacuar¡, Juan Castelli;316;455
+I;99;Piedras, Juan Castelli;377;464
+I;100;Antonia Godoy, Juan Castelli;437;477
+I;101;Patricio Cullen, Juan Castelli;497;487
+I;102;Cngo Echague, Juan Castelli;557;499
+I;103;Talcahuano, Juan Castelli;619;510
+I;104;Defensa, Juan Castelli;676;521
+I;105;Riobamba, Juan Castelli;736;531
+I;106;Av. Almirante Brown, Juan Castelli;768;538
+I;107;Av. Gral. Paz, Hernandarias;187;478
+I;108;V‚lez Sarsfield, Hernandarias;243;487
+I;109;Tacuar¡, Hernandarias;302;500
+I;110;Piedras, Hernandarias;364;510
+I;111;Antonia Godoy, Hernandarias;423;521
+I;112;Patricio Cullen, Hernandarias;482;534
+I;113;Cngo Echague, Hernandarias;546;543
+I;114;Talcahuano, Hernandarias;603;554
+I;115;Defensa, Hernandarias;662;564
+I;116;Riobamba, Hernandarias;716;576
+I;117;Av. Almirante Brown, Hernandarias;716;576
+I;118;Tacuar¡, Pje. Pujato;295;520
+I;119;Piedras, Pje. Pujato;357;532
+I;120;Antonia Godoy, Pje. Pujato;418;544
+I;121;Patricio Cullen, Pje. Pujato;476;555
+I;122;Cngo Echague, Pje. Pujato;537;566
+I;123;Av. Gral. Paz, J. P. L¢pez;145;518
+I;124;V‚lez Sarsfield, J. P. L¢pez;229;533
+I;125;Tacuar¡, J. P. L¢pez;289;544
+I;126;Piedras, J. P. L¢pez;350;556
+I;127;Antonia Godoy, J. P. L¢pez;409;566
+I;128;Patricio Cullen, J. P. L¢pez J. P. L¢pez;469;580
+I;129;Cngo Echague, J. P. L¢pez;529;590
+I;130;Talcahuano, J. P. L¢pez;589;601
+I;131;Defensa, J. P. L¢pez;647;611
+I;132;Av. Almirante Brown, J. P. L¢pez;668;615
+I;133;Av. Gral. Paz, µngel Cassanello;111;558
+I;134;Dorrego, µngel Cassanello;151;567
+I;135;V‚lez Sarsfield, µngel Cassanello;217;580
+I;136;Tacuar¡, µngel Cassanello;273;591
+I;137;Piedras, µngel Cassanello;337;602
+I;138;Antonia Godoy, µngel Cassanello;395;615
+I;139;Patricio Cullen, µngel Cassanello;454;626
+I;140;Cngo Echague, µngel Cassanello;514;636
+I;141;Talcahuano, µngel Cassanello;576;646
+I;142;Av. Almirante Brown, µngel Cassanello;612;656
+I;143;Av. Gral. Paz, Ricardo Aldao;77;602
+I;144;Dorrego, Ricardo Aldao;135;612
+I;145;V‚lez Sarsfield, Ricardo Aldao;201;622
+I;146;Tacuar¡, Ricardo Aldao;261;635
+I;147;Piedras, Ricardo Aldao;321;648
+I;148;Antonia Godoy, Ricardo Aldao;380;661
+I;149;Patricio Cullen, Ricardo Aldao;439;671
+I;150;Cngo Echague, Ricardo Aldao;501;682
+I;151;Av. Almirante Brown, Ricardo Aldao;558;692
+I;152;Av. Gral. Paz, Pedro de Vega;36;638
+I;153;Dorrego, Pedro de Vega;121;656
+I;154;V‚lez Sarsfield, Pedro de Vega;188;669
+I;155;Tacuar¡, Pedro de Vega;245;681
+I;156;Piedras, Pedro de Vega;306;691
+I;157;Antonia Godoy, Pedro de Vega;368;703
+I;158;Patricio Cullen, Pedro de Vega;426;713
+I;159;Cngo Echague, Pedro de Vega;485;725
+I;160;Av. Almirante Brown, Pedro de Vega;513;727
+C;Regimiento 12 de infanteria;1;11;
+C;Regimiento 12 de infanteria;2;1;
+C;Regimiento 12 de infanteria;2;12;
+C;Regimiento 12 de infanteria;3;2;
+C;Regimiento 12 de infanteria;4;3;
+C;Regimiento 12 de infanteria;4;14;
+C;Regimiento 12 de infanteria;5;4;
+C;Regimiento 12 de infanteria;6;5;
+C;Regimiento 12 de infanteria;6;16;
+C;Regimiento 12 de infanteria;7;6;
+C;Regimiento 12 de infanteria;8;7;
+C;Regimiento 12 de infanteria;8;18;
+C;Regimiento 12 de infanteria;9;8;
+C;Regimiento 12 de infanteria;10;9;
+C;Regimiento 12 de infanteria;10;20;
+C;Javier de la Rosa;11;1;
+C;Javier de la Rosa;11;12;
+C;Javier de la Rosa;11;21;
+C;Javier de la Rosa;12;13;
+C;Javier de la Rosa;12;22;
+C;Javier de la Rosa;13;14;
+C;Javier de la Rosa;13;3;
+C;Javier de la Rosa;14;15;
+C;Javier de la Rosa;15;16;
+C;Javier de la Rosa;15;5;
+C;Javier de la Rosa;16;17;
+C;Javier de la Rosa;16;26;
+C;Javier de la Rosa;17;18;
+C;Javier de la Rosa;17;7;
+C;Javier de la Rosa;18;19;
+C;Javier de la Rosa;18;28;
+C;Javier de la Rosa;19;20;
+C;Javier de la Rosa;19;9;
+C;Javier de la Rosa;20;10;
+C;Javier de la Rosa;20;30;
+C;Padre Genesio;21;11;
+C;Padre Genesio;21;33;
+C;Padre Genesio;22;21;
+C;Padre Genesio;22;34;
+C;Padre Genesio;23;22;
+C;Padre Genesio;23;13;
+C;Padre Genesio;24;23;
+C;Padre Genesio;24;31;
+C;Padre Genesio;25;24;
+C;Padre Genesio;25;15;
+C;Padre Genesio;26;25;
+C;Padre Genesio;26;38;
+C;Padre Genesio;27;26;
+C;Padre Genesio;27;17;
+C;Padre Genesio;28;27;
+C;Padre Genesio;28;40;
+C;Padre Genesio;29;28;
+C;Padre Genesio;29;19;
+C;Padre Genesio;30;29;
+C;Padre Genesio;30;20;
+C;Padre Genesio;30;42;
+C;Pje. Andrea;31;36;
+C;Pje. Andrea;32;31;
+C;Pje. Andrea;32;25;
+C;Cardenal Fasolino;33;21;
+C;Cardenal Fasolino;33;34;
+C;Cardenal Fasolino;33;43;
+C;Cardenal Fasolino;34;35;
+C;Cardenal Fasolino;34;44;
+C;Cardenal Fasolino;35;36;
+C;Cardenal Fasolino;35;23;
+C;Cardenal Fasolino;36;37;
+C;Cardenal Fasolino;36;46;
+C;Cardenal Fasolino;37;38;
+C;Cardenal Fasolino;37;32;
+C;Cardenal Fasolino;38;39;
+C;Cardenal Fasolino;38;49;
+C;Cardenal Fasolino;39;40;
+C;Cardenal Fasolino;39;27;
+C;Cardenal Fasolino;40;41;
+C;Cardenal Fasolino;40;51;
+C;Cardenal Fasolino;41;42;
+C;Cardenal Fasolino;41;29;
+C;Cardenal Fasolino;42;30;
+C;Cardenal Fasolino;42;53;
+C;Alberti;43;33;
+C;Alberti;43;54;
+C;Alberti;44;43;
+C;Alberti;44;55;
+C;Alberti;45;44;
+C;Alberti;45;35;
+C;Alberti;46;47;
+C;Alberti;47;48;
+C;Alberti;47;58;
+C;Alberti;48;37;
+C;Alberti;49;48;
+C;Alberti;49;60;
+C;Alberti;50;49;
+C;Alberti;50;39;
+C;Alberti;51;50;
+C;Alberti;51;62;
+C;Alberti;52;51;
+C;Alberti;52;41;
+C;Alberti;53;52;
+C;Alberti;53;42;
+C;Alberti;53;64;
+C;Obispo Principe;54;55;
+C;Obispo Principe;54;43;
+C;Obispo Principe;54;65;
+C;Obispo Principe;55;56;
+C;Obispo Principe;55;66;
+C;Obispo Principe;56;57;
+C;Obispo Principe;56;45;
+C;Obispo Principe;57;58;
+C;Obispo Principe;57;68;
+C;Obispo Principe;58;59;
+C;Obispo Principe;58;47;
+C;Obispo Principe;59;60;
+C;Obispo Principe;60;61;
+C;Obispo Principe;60;70;
+C;Obispo Principe;61;62;
+C;Obispo Principe;61;50;
+C;Obispo Principe;62;63;
+C;Obispo Principe;62;72;
+C;Obispo Principe;63;64;
+C;Obispo Principe;63;52;
+C;Obispo Principe;64;53;
+C;Obispo Principe;64;74;
+C;Espora;65;54;
+C;Espora;65;75;
+C;Espora;66;65;
+C;Espora;66;76;
+C;Espora;67;66;
+C;Espora;67;56;
+C;Espora;68;67;
+C;Espora;68;78;
+C;Espora;69;68;
+C;Espora;69;59;
+C;Espora;70;69;
+C;Espora;70;80;
+C;Espora;71;70;
+C;Espora;71;61;
+C;Espora;72;71;
+C;Espora;72;82;
+C;Espora;73;72;
+C;Espora;73;63;
+C;Espora;74;73;
+C;Espora;74;64;
+C;Espora;74;84;
+C;Obispo Boneo;75;76;
+C;Obispo Boneo;75;65;
+C;Obispo Boneo;75;85;
+C;Obispo Boneo;76;77;
+C;Obispo Boneo;76;87;
+C;Obispo Boneo;77;78;
+C;Obispo Boneo;77;67;
+C;Obispo Boneo;78;79;
+C;Obispo Boneo;78;89;
+C;Obispo Boneo;79;80;
+C;Obispo Boneo;79;69;
+C;Obispo Boneo;80;81;
+C;Obispo Boneo;80;91;
+C;Obispo Boneo;81;82;
+C;Obispo Boneo;81;71;
+C;Obispo Boneo;82;83;
+C;Obispo Boneo;82;93;
+C;Obispo Boneo;83;84;
+C;Obispo Boneo;83;73;
+C;Obispo Boneo;84;74;
+C;Obispo Boneo;84;95;
+C;Estanislao Zeballos;85;75;
+C;Estanislao Zeballos;85;96;
+C;Estanislao Zeballos;86;85;
+C;Estanislao Zeballos;87;86;
+C;Estanislao Zeballos;87;98;
+C;Estanislao Zeballos;88;87;
+C;Estanislao Zeballos;88;77;
+C;Estanislao Zeballos;89;88;
+C;Estanislao Zeballos;89;100;
+C;Estanislao Zeballos;90;89;
+C;Estanislao Zeballos;90;79;
+C;Estanislao Zeballos;91;90;
+C;Estanislao Zeballos;91;102;
+C;Estanislao Zeballos;92;91;
+C;Estanislao Zeballos;92;81;
+C;Estanislao Zeballos;93;92;
+C;Estanislao Zeballos;93;104;
+C;Estanislao Zeballos;94;93;
+C;Estanislao Zeballos;94;83;
+C;Estanislao Zeballos;95;94;
+C;Estanislao Zeballos;95;84;
+C;Estanislao Zeballos;95;106;
+C;Juan Castelli;96;97;
+C;Juan Castelli;96;85;
+C;Juan Castelli;96;107;
+C;Juan Castelli;97;98;
+C;Juan Castelli;97;86;
+C;Juan Castelli;98;99;
+C;Juan Castelli;98;109;
+C;Juan Castelli;99;100;
+C;Juan Castelli;99;88;
+C;Juan Castelli;100;101;
+C;Juan Castelli;100;111;
+C;Juan Castelli;101;102;
+C;Juan Castelli;101;90;
+C;Juan Castelli;102;103;
+C;Juan Castelli;102;113;
+C;Juan Castelli;103;104;
+C;Juan Castelli;103;92;
+C;Juan Castelli;104;105;
+C;Juan Castelli;104;115;
+C;Juan Castelli;105;106;
+C;Juan Castelli;105;94;
+C;Juan Castelli;106;95;
+C;Juan Castelli;106;117;
+C;Hernandarias;107;96;
+C;Hernandarias;107;123;
+C;Hernandarias;108;107;
+C;Hernandarias;108;97;
+C;Hernandarias;109;108;
+C;Hernandarias;109;118;
+C;Hernandarias;110;109;
+C;Hernandarias;110;99;
+C;Hernandarias;111;110;
+C;Hernandarias;111;120;
+C;Hernandarias;112;111;
+C;Hernandarias;112;101;
+C;Hernandarias;113;112;
+C;Hernandarias;113;122;
+C;Hernandarias;114;113;
+C;Hernandarias;114;103;
+C;Hernandarias;115;114;
+C;Hernandarias;115;131;
+C;Hernandarias;116;115;
+C;Hernandarias;116;105;
+C;Hernandarias;117;116;
+C;Hernandarias;117;106;
+C;Hernandarias;117;132;
+C;Pje. Pujato;118;119;
+C;Pje. Pujato;118;125;
+C;Pje. Pujato;119;118;
+C;Pje. Pujato;119;110;
+C;Pje. Pujato;120;121;
+C;Pje. Pujato;120;127;
+C;Pje. Pujato;121;122;
+C;Pje. Pujato;121;120;
+C;Pje. Pujato;121;112;
+C;Pje. Pujato;122;121;
+C;Pje. Pujato;122;129;
+C;J. P. Lopez;123;124;
+C;J. P. Lopez;123;107;
+C;J. P. Lopez;123;133;
+C;J. P. Lopez;124;125;
+C;J. P. Lopez;124;108;
+C;J. P. Lopez;125;126;
+C;J. P. Lopez;125;136;
+C;J. P. Lopez;126;127;
+C;J. P. Lopez;126;119;
+C;J. P. Lopez;127;128;
+C;J. P. Lopez;127;138;
+C;J. P. Lopez;128;129;
+C;J. P. Lopez;128;121;
+C;J. P. Lopez;129;130;
+C;J. P. Lopez;129;140;
+C;J. P. Lopez;130;131;
+C;J. P. Lopez;130;114;
+C;J. P. Lopez;131;132;
+C;J. P. Lopez;132;117;
+C;J. P. Lopez;132;142;
+C;µngel Casanello;133;134;
+C;µngel Casanello;133;123;
+C;µngel Casanello;133;143;
+C;µngel Casanello;134;133;
+C;µngel Casanello;134;135;
+C;µngel Casanello;134;144;
+C;µngel Casanello;135;134;
+C;µngel Casanello;135;136;
+C;µngel Casanello;135;124;
+C;µngel Casanello;136;135;
+C;µngel Casanello;136;137;
+C;µngel Casanello;136;146;
+C;µngel Casanello;137;136;
+C;µngel Casanello;137;138;
+C;µngel Casanello;137;126;
+C;µngel Casanello;138;137;
+C;µngel Casanello;138;139;
+C;µngel Casanello;138;148;
+C;µngel Casanello;139;138;
+C;µngel Casanello;139;140;
+C;µngel Casanello;139;128;
+C;µngel Casanello;140;139;
+C;µngel Casanello;140;141;
+C;µngel Casanello;140;150;
+C;µngel Casanello;141;140;
+C;µngel Casanello;141;142;
+C;µngel Casanello;141;130;
+C;µngel Casanello;142;141;
+C;µngel Casanello;142;132;
+C;µngel Casanello;142;151;
+C;Ricardo Aldao;143;144;
+C;Ricardo Aldao;143;133;
+C;Ricardo Aldao;143;152;
+C;Ricardo Aldao;144;145;
+C;Ricardo Aldao;144;153;
+C;Ricardo Aldao;145;146;
+C;Ricardo Aldao;145;135;
+C;Ricardo Aldao;146;147;
+C;Ricardo Aldao;146;155;
+C;Ricardo Aldao;147;148;
+C;Ricardo Aldao;147;137;
+C;Ricardo Aldao;148;149;
+C;Ricardo Aldao;148;157;
+C;Ricardo Aldao;149;150;
+C;Ricardo Aldao;149;139;
+C;Ricardo Aldao;150;151;
+C;Ricardo Aldao;150;159;
+C;Ricardo Aldao;151;142;
+C;Ricardo Aldao;151;160;
+C;Pedro de Vega;152;143;
+C;Pedro de Vega;153;152;
+C;Pedro de Vega;154;153;
+C;Pedro de Vega;154;145;
+C;Pedro de Vega;155;154;
+C;Pedro de Vega;156;155;
+C;Pedro de Vega;156;147;
+C;Pedro de Vega;157;156;
+C;Pedro de Vega;158;157;
+C;Pedro de Vega;158;149;
+C;Pedro de Vega;159;158;
+C;Pedro de Vega;160;159;
+C;Pedro de Vega;160;151;
+C;Av. Gral. Paz;1;11;
+C;Av. Gral. Paz;11;1;
+C;Av. Gral. Paz;11;12;
+C;Av. Gral. Paz;11;21;
+C;Av. Gral. Paz;21;11;
+C;Av. Gral. Paz;21;33;
+C;Av. Gral. Paz;30;29;
+C;Av. Gral. Paz;30;20;
+C;Av. Gral. Paz;30;42;
+C;Av. Gral. Paz;33;21;
+C;Av. Gral. Paz;33;34;
+C;Av. Gral. Paz;33;43;
+C;Av. Gral. Paz;43;33;
+C;Av. Gral. Paz;43;54;
+C;Av. Gral. Paz;54;55;
+C;Av. Gral. Paz;54;43;
+C;Av. Gral. Paz;54;65;
+C;Av. Gral. Paz;65;54;
+C;Av. Gral. Paz;65;75;
+C;Av. Gral. Paz;75;76;
+C;Av. Gral. Paz;75;65;
+C;Av. Gral. Paz;75;85;
+C;Av. Gral. Paz;85;75;
+C;Av. Gral. Paz;85;96;
+C;Av. Gral. Paz;96;97;
+C;Av. Gral. Paz;96;85;
+C;Av. Gral. Paz;96;107;
+C;Av. Gral. Paz;107;96;
+C;Av. Gral. Paz;107;123;
+C;Av. Gral. Paz;117;116;
+C;Av. Gral. Paz;117;106;
+C;Av. Gral. Paz;117;132;
+C;Av. Gral. Paz;123;124;
+C;Av. Gral. Paz;123;107;
+C;Av. Gral. Paz;123;133;
+C;Av. Gral. Paz;133;134;
+C;Av. Gral. Paz;133;123;
+C;Av. Gral. Paz;133;143;
+C;Av. Gral. Paz;143;144;
+C;Av. Gral. Paz;143;133;
+C;Av. Gral. Paz;143;152;
+C;Av. Gral. Paz;152;143;
+C;Tacuar¡;2;1;
+C;Tacuar¡;2;12;
+C;Tacuar¡;12;13;
+C;Tacuar¡;12;22;
+C;Tacuar¡;22;21;
+C;Tacuar¡;22;34;
+C;Tacuar¡;34;35;
+C;Tacuar¡;34;44;
+C;Tacuar¡;44;43;
+C;Tacuar¡;44;55;
+C;Tacuar¡;55;56;
+C;Tacuar¡;55;66;
+C;Tacuar¡;66;65;
+C;Tacuar¡;66;76;
+C;Tacuar¡;76;77;
+C;Tacuar¡;76;87;
+C;Tacuar¡;87;86;
+C;Tacuar¡;87;98;
+C;Tacuar¡;98;99;
+C;Tacuar¡;98;109;
+C;Tacuar¡;109;108;
+C;Tacuar¡;109;118;
+C;Tacuar¡;118;119;
+C;Tacuar¡;118;125;
+C;Tacuar¡;125;126;
+C;Tacuar¡;125;136;
+C;Tacuar¡;136;135;
+C;Tacuar¡;136;137;
+C;Tacuar¡;136;146;
+C;Tacuar¡;146;147;
+C;Tacuar¡;146;155;
+C;Tacuar¡;155;154;
+C;Piedras;3;2;
+C;Piedras;13;14;
+C;Piedras;13;3;
+C;Piedras;23;22;
+C;Piedras;23;13;
+C;Piedras;35;36;
+C;Piedras;35;23;
+C;Piedras;44;43;
+C;Piedras;44;55;
+C;Piedras;55;56;
+C;Piedras;55;66;
+C;Piedras;67;66;
+C;Piedras;67;56;
+C;Piedras;77;78;
+C;Piedras;77;67;
+C;Piedras;88;87;
+C;Piedras;88;77;
+C;Piedras;99;100;
+C;Piedras;99;88;
+C;Piedras;110;109;
+C;Piedras;110;99;
+C;Piedras;119;118;
+C;Piedras;119;110;
+C;Piedras;126;127;
+C;Piedras;126;119;
+C;Piedras;137;136;
+C;Piedras;137;138;
+C;Piedras;137;126;
+C;Piedras;147;148;
+C;Piedras;147;137;
+C;Piedras;156;155;
+C;Piedras;156;147;
+C;Antonia Godoy;4;3;
+C;Antonia Godoy;4;14;
+C;Antonia Godoy;14;15;
+C;Antonia Godoy;24;23;
+C;Antonia Godoy;24;31;
+C;Antonia Godoy;36;37;
+C;Antonia Godoy;36;46;
+C;Antonia Godoy;45;44;
+C;Antonia Godoy;45;35;
+C;Antonia Godoy;56;57;
+C;Antonia Godoy;56;45;
+C;Antonia Godoy;68;67;
+C;Antonia Godoy;68;78;
+C;Antonia Godoy;78;79;
+C;Antonia Godoy;78;89;
+C;Antonia Godoy;89;88;
+C;Antonia Godoy;89;100;
+C;Antonia Godoy;100;101;
+C;Antonia Godoy;100;111;
+C;Antonia Godoy;111;110;
+C;Antonia Godoy;111;120;
+C;Antonia Godoy;120;121;
+C;Antonia Godoy;120;127;
+C;Antonia Godoy;127;128;
+C;Antonia Godoy;127;138;
+C;Antonia Godoy;138;137;
+C;Antonia Godoy;138;139;
+C;Antonia Godoy;138;148;
+C;Antonia Godoy;148;149;
+C;Antonia Godoy;148;157;
+C;Antonia Godoy;157;156;
+C;Patricio Cullen;5;4;
+C;Patricio Cullen;15;16;
+C;Patricio Cullen;15;5;
+C;Patricio Cullen;25;24;
+C;Patricio Cullen;25;15;
+C;Patricio Cullen;37;38;
+C;Patricio Cullen;37;32;
+C;Patricio Cullen;46;47;
+C;Patricio Cullen;57;58;
+C;Patricio Cullen;57;68;
+C;Patricio Cullen;69;68;
+C;Patricio Cullen;69;59;
+C;Patricio Cullen;79;80;
+C;Patricio Cullen;79;69;
+C;Patricio Cullen;90;89;
+C;Patricio Cullen;90;79;
+C;Patricio Cullen;101;102;
+C;Patricio Cullen;101;90;
+C;Patricio Cullen;112;111;
+C;Patricio Cullen;112;101;
+C;Patricio Cullen;121;122;
+C;Patricio Cullen;121;120;
+C;Patricio Cullen;121;112;
+C;Patricio Cullen;128;129;
+C;Patricio Cullen;128;121;
+C;Patricio Cullen;139;138;
+C;Patricio Cullen;139;140;
+C;Patricio Cullen;139;128;
+C;Patricio Cullen;149;150;
+C;Patricio Cullen;149;139;
+C;Patricio Cullen;158;157;
+C;Patricio Cullen;158;149;
+C;Cngo Echague;6;5;
+C;Cngo Echague;6;16;
+C;Cngo Echague;16;17;
+C;Cngo Echague;16;26;
+C;Cngo Echague;26;25;
+C;Cngo Echague;26;38;
+C;Cngo Echague;38;39;
+C;Cngo Echague;38;49;
+C;Cngo Echague;49;48;
+C;Cngo Echague;49;60;
+C;Cngo Echague;60;61;
+C;Cngo Echague;60;70;
+C;Cngo Echague;70;69;
+C;Cngo Echague;70;80;
+C;Cngo Echague;80;81;
+C;Cngo Echague;80;91;
+C;Cngo Echague;91;90;
+C;Cngo Echague;91;102;
+C;Cngo Echague;102;103;
+C;Cngo Echague;102;113;
+C;Cngo Echague;113;112;
+C;Cngo Echague;113;122;
+C;Cngo Echague;122;121;
+C;Cngo Echague;122;129;
+C;Cngo Echague;129;130;
+C;Cngo Echague;129;140;
+C;Cngo Echague;140;139;
+C;Cngo Echague;140;141;
+C;Cngo Echague;140;150;
+C;Cngo Echague;150;151;
+C;Cngo Echague;150;159;
+C;Cngo Echague;159;158;
+C;Talcahuano;7;6;
+C;Talcahuano;17;18;
+C;Talcahuano;17;7;
+C;Talcahuano;27;26;
+C;Talcahuano;27;17;
+C;Talcahuano;39;40;
+C;Talcahuano;39;27;
+C;Talcahuano;50;49;
+C;Talcahuano;50;39;
+C;Talcahuano;61;62;
+C;Talcahuano;61;50;
+C;Talcahuano;71;70;
+C;Talcahuano;71;61;
+C;Talcahuano;81;82;
+C;Talcahuano;81;71;
+C;Talcahuano;92;91;
+C;Talcahuano;92;81;
+C;Talcahuano;103;104;
+C;Talcahuano;103;92;
+C;Talcahuano;114;113;
+C;Talcahuano;114;103;
+C;Talcahuano;130;131;
+C;Talcahuano;130;114;
+C;Talcahuano;141;140;
+C;Talcahuano;141;142;
+C;Talcahuano;141;130;
+C;Defensa;8;7;
+C;Defensa;8;18;
+C;Defensa;18;19;
+C;Defensa;18;28;
+C;Defensa;28;27;
+C;Defensa;28;40;
+C;Defensa;40;41;
+C;Defensa;40;51;
+C;Defensa;51;50;
+C;Defensa;51;62;
+C;Defensa;62;63;
+C;Defensa;62;72;
+C;Defensa;72;71;
+C;Defensa;72;82;
+C;Defensa;82;83;
+C;Defensa;82;93;
+C;Defensa;93;92;
+C;Defensa;93;104;
+C;Defensa;104;105;
+C;Defensa;104;115;
+C;Defensa;115;114;
+C;Defensa;115;131;
+C;Defensa;131;132;
+C;Riobamba;9;8;
+C;Riobamba;19;20;
+C;Riobamba;19;9;
+C;Riobamba;29;28;
+C;Riobamba;29;19;
+C;Riobamba;41;42;
+C;Riobamba;41;29;
+C;Riobamba;52;51;
+C;Riobamba;52;41;
+C;Riobamba;63;64;
+C;Riobamba;63;52;
+C;Riobamba;73;72;
+C;Riobamba;73;63;
+C;Riobamba;83;84;
+C;Riobamba;83;73;
+C;Riobamba;94;93;
+C;Riobamba;94;83;
+C;Riobamba;105;106;
+C;Riobamba;105;94;
+C;Riobamba;116;115;
+C;Riobamba;116;105;
+C;Italia;10;9;
+C;Italia;10;20;
+C;Av. Almirante Brown;20;10;
+C;Av. Almirante Brown;20;30;
+C;Av. Almirante Brown;30;29;
+C;Av. Almirante Brown;30;20;
+C;Av. Almirante Brown;30;42;
+C;Av. Almirante Brown;42;30;
+C;Av. Almirante Brown;42;53;
+C;Av. Almirante Brown;53;52;
+C;Av. Almirante Brown;53;42;
+C;Av. Almirante Brown;53;64;
+C;Av. Almirante Brown;64;53;
+C;Av. Almirante Brown;64;74;
+C;Av. Almirante Brown;74;73;
+C;Av. Almirante Brown;74;64;
+C;Av. Almirante Brown;74;84;
+C;Av. Almirante Brown;84;74;
+C;Av. Almirante Brown;84;95;
+C;Av. Almirante Brown;95;94;
+C;Av. Almirante Brown;95;84;
+C;Av. Almirante Brown;95;106;
+C;Av. Almirante Brown;106;95;
+C;Av. Almirante Brown;106;117;
+C;Av. Almirante Brown;117;116;
+C;Av. Almirante Brown;117;106;
+C;Av. Almirante Brown;117;132;
+C;Av. Almirante Brown;132;117;
+C;Av. Almirante Brown;132;142;
+C;Av. Almirante Brown;151;142;
+C;Av. Almirante Brown;151;160;
+C;Av. Almirante Brown;160;159;
+C;Av. Almirante Brown;160;151;
+C;Vel‚z Sarsfield;86;85;
+C;Vel‚z Sarsfield;97;98;
+C;Vel‚z Sarsfield;97;86;
+C;Vel‚z Sarsfield;108;107;
+C;Vel‚z Sarsfield;108;97;
+C;Vel‚z Sarsfield;124;125;
+C;Vel‚z Sarsfield;124;108;
+C;Vel‚z Sarsfield;135;134;
+C;Vel‚z Sarsfield;135;136;
+C;Vel‚z Sarsfield;135;124;
+C;Vel‚z Sarsfield;145;146;
+C;Vel‚z Sarsfield;145;135;
+C;Vel‚z Sarsfield;154;153;
+C;Vel‚z Sarsfield;154;145;
+C;Dorrego;134;133;
+C;Dorrego;134;135;
+C;Dorrego;134;144;
+C;Dorrego;144;145;
+C;Dorrego;144;153;
+C;Dorrego;153;152;

@@ -12,6 +12,7 @@ import frsf.cidisi.faia.solver.search.*;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.ArrayList;
 import java.util.Vector;
 import dominio.Interseccion;
 import dominio.Mapa;
@@ -31,7 +32,8 @@ public class Agente extends SearchBasedAgent {
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
         // TrasladarseA
-        for(Interseccion i: Mapa.getMapa().getListaIntersecciones()){
+        ArrayList<Interseccion> listaI = Mapa.getMapa().getListaIntersecciones();
+        for(Interseccion i: listaI){
         	operators.addElement(new TrasladarseA(i));	
         }	
         //Comprar

@@ -96,7 +96,7 @@ public class Mapa {
 	public static Mapa crearMapa(){
 		
 		/////////// MAPA //////////
-		mapa = importarExcel("");  //TODO: falta excel
+		mapa = importarExcel("Datos/Zona costanera.csv"); 
 		
 		/////////// POSICION AGENTE //////////
 		posicionOrigenAgente = new Interseccion(100, "Antonia Godoy, Juan Castelli");  //TODO: mapa.buscarInterseccionPorId(100);
