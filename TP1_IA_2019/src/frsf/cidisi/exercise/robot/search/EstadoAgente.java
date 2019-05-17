@@ -23,7 +23,6 @@ public class EstadoAgente extends SearchBasedAgentState {
     private ArrayList<Interseccion> rutaAgente;
 	
 	public EstadoAgente() {
-        this.initState();
     }
 
     /**
@@ -66,7 +65,7 @@ public class EstadoAgente extends SearchBasedAgentState {
     @Override
     public void initState() {
     	/////////// MAPA //////////
-    	mapa = Mapa.crearMapa();
+    	mapa = Mapa.crearMapa();  ///Creamos por unica vez el mapa
     	
     	/////////// DESTINOS //////////
     	this.listaDestinos = Mapa.getListaDestinos();
@@ -117,8 +116,7 @@ public class EstadoAgente extends SearchBasedAgentState {
     	p9.setPrecio(0);
     	
     	/////////// CUADRAS BLOQUEADAS //////////
-    	listaCuadrasBloqueadas = new ArrayList<Cuadra>();
-    	listaCuadrasBloqueadas.addAll(Mapa.listaCuadrasBloqueadas);
+    	listaCuadrasBloqueadas = Mapa.listaCuadrasBloqueadas;
     }
 
     /**
@@ -133,7 +131,7 @@ public class EstadoAgente extends SearchBasedAgentState {
         str += posicionActual.toString()+"\n";
         str += "Ruta agente: ";
         str += rutaAgente.toString();
-        str += "\nCuadras Bloqueadas: " + this.getListaCuadrasBloqueadas().toString() + "\n";
+        //str += "\nCuadras Bloqueadas: " + this.getListaCuadrasBloqueadas().toString() + "\n";
 
         return str;
     }

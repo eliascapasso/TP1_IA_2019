@@ -99,52 +99,60 @@ public class Mapa {
 		mapa = importarExcel("");
 		
 		/////////// POSICION AGENTE //////////
-		posicionOrigenAgente = mapa.buscarInterseccionPorId(100);
+		posicionOrigenAgente = new Interseccion(100, "Antonia Godoy, Juan Castelli");  //TODO: mapa.buscarInterseccionPorId(100);
 		
 		/////////// SUPERMERCADOS //////////
 		Supermercado alvear = new Supermercado();
     	alvear.setNombre("alvear");
     	alvear.setUbicacion(new Interseccion(85 ,"Av. Gral. Paz, Estaninlao Zeballos"));
+    	
+    	Supermercado patricia = new Supermercado();
+    	patricia.setNombre("patricia");
+    	patricia.setUbicacion(new Interseccion(138 ,"Antonia Godoy, Angel Casanello"));
+    	
+    	Supermercado kilbel = new Supermercado();
+    	kilbel.setNombre("kilbel");
+    	kilbel.setUbicacion(new Interseccion(11 ,"Av. Gral. Paz, Javier de la Rosa"));
+    	
+    	/////////// PRODUCTOS SUPERMERCADOS //////////
     	ArrayList<Producto> productosAlvear = new ArrayList<Producto>();
     	productosAlvear.add(new Producto("p1", 5));
     	productosAlvear.add(new Producto("p2", 20));
     	productosAlvear.add(new Producto("p4", 80));
     	productosAlvear.add(new Producto("p6", 40));
-		listaDestinos.add(alvear);
-		
-		Supermercado patricia = new Supermercado();
-    	patricia.setNombre("patricia");
-    	patricia.setUbicacion(new Interseccion(138 ,"Antonia Godoy, Angel Casanello"));
+    	alvear.setListaProductos(productosAlvear);
+    	
     	ArrayList<Producto> productosPatricia = new ArrayList<Producto>();
     	productosPatricia.add(new Producto("p1", 10));
     	productosPatricia.add(new Producto("p5", 5));
     	productosPatricia.add(new Producto("p6", 40));
     	productosPatricia.add(new Producto("p9", 35));
-		listaDestinos.add(patricia);
-		
-		Supermercado kilbel = new Supermercado();
-    	kilbel.setNombre("kilbel");
-    	kilbel.setUbicacion(new Interseccion(11 ,"Av. Gral. Paz, Javier de la Rosa"));
+    	patricia.setListaProductos(productosPatricia);
+    	
     	ArrayList<Producto> productosKilbel = new ArrayList<Producto>();
     	productosKilbel.add(new Producto("p1", 12));
     	productosKilbel.add(new Producto("p3", 10));
     	productosKilbel.add(new Producto("p5", 15));
     	productosKilbel.add(new Producto("p7", 10));
     	productosKilbel.add(new Producto("p8", 10));
-		listaDestinos.add(kilbel);
-		
-		/////////// PROMOCIONES //////////
-		productosAlvear.add(new Producto("p6", 30));
+    	kilbel.setListaProductos(productosPatricia);
+    	
+    	/////////// PROMOCIONES SUPERMERCADOS//////////
 		ArrayList<Producto> promocionesAlvear = new ArrayList<Producto>();
+		promocionesAlvear.add(new Producto("p6", 30));
 		alvear.setListaPromociones(promocionesAlvear);
 		
-		productosPatricia.add(new Producto("p9", 30));
 		ArrayList<Producto> promocionesPatricia = new ArrayList<Producto>();
-		alvear.setListaPromociones(promocionesPatricia);
+		promocionesPatricia.add(new Producto("p9", 30));
+		patricia.setListaPromociones(promocionesPatricia);
 		
-		productosKilbel.add(new Producto("p5", 5));
 		ArrayList<Producto> promocionesKilbel = new ArrayList<Producto>();
-		alvear.setListaPromociones(promocionesKilbel);
+		promocionesKilbel.add(new Producto("p5", 5));
+		kilbel.setListaPromociones(promocionesKilbel);
+    	
+    	listaDestinos.add(alvear);
+    	listaDestinos.add(patricia);
+		listaDestinos.add(kilbel);
 		
 		/////////// CUADRAS BLOQUEADAS //////////
 		listaCuadrasBloqueadas.add(new Cuadra("Javier de la Rosa", new Interseccion(11, "Av. Gral. Paz, Javier de la Rosa"), new Interseccion(1, "Av. Gral. Paz, Regimiento 12 de infantería")));

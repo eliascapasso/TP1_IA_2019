@@ -9,6 +9,7 @@ import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgent;
 import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.solver.search.*;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Vector;
@@ -24,12 +25,13 @@ public class Agente extends SearchBasedAgent {
 
         // The Agent State
         EstadoAgente agState = new EstadoAgente();
+        agState.initState();
         this.setAgentState(agState);
 
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
         // TrasladarseA
-        for(Interseccion i: Mapa.crearMapa().getListaIntersecciones()){
+        for(Interseccion i: Mapa.getMapa().getListaIntersecciones()){
         	operators.addElement(new TrasladarseA(i));	
         }	
         //Comprar
@@ -47,9 +49,10 @@ public class Agente extends SearchBasedAgent {
     public Action selectAction() {
 
         // Create the search strategy
-        IStepCostFunction cost = new CostFunction();
-        IEstimatedCostFunction heuristic = new Heuristic(); 
-        AStarSearch strategy = new AStarSearch(cost, heuristic);          
+        //IStepCostFunction cost = new CostFunction();
+        //IEstimatedCostFunction heuristic = new Heuristic(); 
+        //AStarSearch strategy = new AStarSearch(cost, heuristic);
+        Strategy strategy = new UniformCostSearch(new CostFunction());
 
         // Create a Search object with the strategy
         Search searchSolver = new Search(strategy);
@@ -72,7 +75,6 @@ public class Agente extends SearchBasedAgent {
 
         // Return the selected action
         return selectedAction;
-
     }
 
     /**

@@ -35,7 +35,8 @@ public class EstadoAmbiente extends EnvironmentState {
      */
     @Override
     public void initState() {
-    	this.mapa = Mapa.crearMapa();
+    	//Solo se obtiene el mapa ya que en el estado del agente se lo crea
+    	this.mapa = Mapa.getMapa();
     	
     	this.posicionAgente = Mapa.posicionOrigenAgente;
     	

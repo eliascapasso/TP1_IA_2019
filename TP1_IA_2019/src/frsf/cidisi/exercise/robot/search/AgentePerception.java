@@ -49,7 +49,12 @@ public class AgentePerception extends Perception {
     @Override
     public String toString() {
     	String str = "\n";
-        str += "Cuadras Bloqueadas: " + listaCuadrasBloqueadas.toString() + "\n";
+        str += "Cuadras Bloqueadas: \n";
+        for(Cuadra c: listaCuadrasBloqueadas){
+        	str += "Calle: " + c.getNombreCalle() + "\n" +
+        	"Interseccion 1: " + c.getOrigen().toString() + "\n" +
+        	"Interseccion 2: " + c.getDestino().toString() + "\n";
+        }
         
         str += "Promociones: \n";
         for(Supermercado s: listaPromocionesSupermercados){
@@ -61,8 +66,6 @@ public class AgentePerception extends Perception {
         
         return str;
     }
-
-	
 
 	public ArrayList<Supermercado> getListaPromocionesSupermercados() {
 		return listaPromocionesSupermercados;
