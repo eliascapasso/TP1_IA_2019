@@ -1,5 +1,10 @@
 package frsf.cidisi.exercise.robot.search;
 
+import java.util.ArrayList;
+import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import frsf.cidisi.exercise.robot.search.actions.TrasladarseA;
 import frsf.cidisi.exercise.robot.search.actions.Comprar;
 
@@ -10,10 +15,6 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgent;
 import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.solver.search.*;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.ArrayList;
-import java.util.Vector;
 import dominio.Interseccion;
 import dominio.Mapa;
 
@@ -37,7 +38,7 @@ public class Agente extends SearchBasedAgent {
         	operators.addElement(new TrasladarseA(i));	
         }	
         //Comprar
-        operators.addElement(new Comprar());	
+        //operators.addElement(new Comprar());	
 
         // Create the Problem which the agent will resolve
         Problem problem = new Problem(agGoal, agState, operators);
@@ -61,7 +62,7 @@ public class Agente extends SearchBasedAgent {
 
         /* Generate an XML file with the search tree. It can also be generated
          * in other formats like PDF with PDF_TREE */
-        searchSolver.setVisibleTree(Search.EFAIA_TREE);
+        searchSolver.setVisibleTree(Search.XML_TREE);
 
         // Set the Search searchSolver.
         this.setSolver(searchSolver);

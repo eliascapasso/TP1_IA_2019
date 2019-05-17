@@ -21,7 +21,7 @@ public class TrasladarseA extends SearchAction {
     	this.interseccion = i;
     	
     	adyacentes = new ArrayList<Interseccion>();
-    	for(Cuadra c: Mapa.crearMapa().getListaCuadras()){
+    	for(Cuadra c: Mapa.getMapa().getListaCuadras()){
     		if(c.getDestino().equals(i))
     			adyacentes.add(c.getOrigen());
     	} 

@@ -85,11 +85,10 @@ public class Mapa {
 	}
 
 	public static ArrayList<Cuadra> getListaCuadrasBloqueadas() {
-		return listaCuadrasBloqueadas;
+		return Mapa.listaCuadrasBloqueadas;
 	}
 
-	public static void setListaCuadrasBloqueadas(
-			ArrayList<Cuadra> listaCuadrasBloqueadas) {
+	public static void setListaCuadrasBloqueadas(ArrayList<Cuadra> listaCuadrasBloqueadas) {
 		Mapa.listaCuadrasBloqueadas = listaCuadrasBloqueadas;
 	}
 
@@ -99,7 +98,7 @@ public class Mapa {
 		mapa = importarExcel("Datos/Zona costanera.csv"); 
 		
 		/////////// POSICION AGENTE //////////
-		posicionOrigenAgente = new Interseccion(100, "Antonia Godoy, Juan Castelli");  //TODO: mapa.buscarInterseccionPorId(100);
+		posicionOrigenAgente = mapa.buscarInterseccionPorId(100);
 		
 		/////////// SUPERMERCADOS //////////
 		Supermercado alvear = new Supermercado();
@@ -173,9 +172,11 @@ public class Mapa {
 			while ((linea = br.readLine()) != null) {
 				String[] lectura = linea.split(separadorLinea);
 				
-				if (lectura[0].equals("I")) {//Esquina
+				if (lectura[0].equals("I")) {//Interseccion
 					//lectura[1]: id
 					//lectura[2]: interseccion
+					//lectura[3]: coordenada X
+					//lectura[4]: coordenada X
 					Interseccion nuevaInterseccion = new Interseccion(Integer.parseInt(lectura[1]),lectura[2]);
 					//nuevaInterseccion.setDibujo(new Integer[]{Integer.parseInt(lectura[3]),Integer.parseInt(lectura[4])});
 					
