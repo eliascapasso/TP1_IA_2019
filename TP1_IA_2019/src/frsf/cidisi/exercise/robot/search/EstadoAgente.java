@@ -115,6 +115,16 @@ public class EstadoAgente extends SearchBasedAgentState {
     	p9.setNombre("p9");
     	p9.setPrecio(0);
     	
+    	this.listaProductos.add(p1);
+    	this.listaProductos.add(p2);
+    	this.listaProductos.add(p3);
+    	this.listaProductos.add(p4);
+    	this.listaProductos.add(p5);
+    	this.listaProductos.add(p6);
+    	this.listaProductos.add(p7);
+    	this.listaProductos.add(p8);
+    	this.listaProductos.add(p9);
+    	
     	/////////// CUADRAS BLOQUEADAS //////////
     	listaCuadrasBloqueadas = Mapa.listaCuadrasBloqueadas;
     }
