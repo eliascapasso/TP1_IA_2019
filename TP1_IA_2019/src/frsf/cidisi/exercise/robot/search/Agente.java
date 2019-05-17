@@ -12,6 +12,8 @@ import frsf.cidisi.faia.solver.search.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Vector;
+import dominio.Interseccion;
+import dominio.Mapa;
 
 public class Agente extends SearchBasedAgent {
 
@@ -26,7 +28,11 @@ public class Agente extends SearchBasedAgent {
 
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
-        operators.addElement(new TrasladarseA());	
+        // TrasladarseA
+        for(Interseccion i: Mapa.crearMapa().getListaIntersecciones()){
+        	operators.addElement(new TrasladarseA(i));	
+        }	
+        //Comprar
         operators.addElement(new Comprar());	
 
         // Create the Problem which the agent will resolve

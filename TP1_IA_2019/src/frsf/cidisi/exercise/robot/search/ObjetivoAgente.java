@@ -11,7 +11,7 @@ public class ObjetivoAgente extends GoalTest {
     public boolean isGoalState (AgentState agentState) {
     	EstadoAgente estadoAgente = (EstadoAgente) agentState;
     	
-    	return (estadoAgente.getListaDestinos().contains(estadoAgente.getposicionActual())) 
+    	return (estadoAgente.getListaDestinos().contains(estadoAgente.getPosicionActual())) 
     			&& (estadoAgente.getListaProductos().size() == 0);
     }
 }

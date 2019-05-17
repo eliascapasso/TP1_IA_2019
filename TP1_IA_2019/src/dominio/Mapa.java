@@ -28,14 +28,6 @@ public class Mapa {
 		this.listaIntersecciones = listaIntersecciones;
 	}
 	
-	public ArrayList<Cuadra> getListaCalles() {
-		return listaCuadras;
-	}
-	
-	public void setListaCalles(ArrayList<Cuadra> listaCalles) {
-		this.listaCuadras = listaCalles;
-	}
-	
 	public void agregarInterseccion(Interseccion interseccion){
 		listaIntersecciones.add(interseccion);
 	}
@@ -47,8 +39,17 @@ public class Mapa {
 		return null;
 	}
 	
-	public void agregarCalle(Cuadra calle){
-		listaCuadras.add(calle);
+	public void agregarCuadra(Cuadra cuadra){
+		listaCuadras.add(cuadra);
+	}
+	
+	public Cuadra buscarCuadra(Interseccion origen, Interseccion destino){
+		for(Cuadra c: this.getListaCuadras()){
+			if(c.getOrigen().equals(origen)&&c.getDestino().equals(destino))
+				return c;
+		}
+		return null;
+		
 	}
 	
 	public ArrayList<Cuadra> getListaCuadras() {
@@ -185,7 +186,7 @@ public class Mapa {
 												origen, 
 												destino);
 				
-					mapa.agregarCalle(nuevaCuadra);
+					mapa.agregarCuadra(nuevaCuadra);
 				}
 			}
 		} catch (NumberFormatException e) {
@@ -193,6 +194,15 @@ public class Mapa {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		return mapa;
+	}
+	
+	@Override
+	public Mapa clone(){
+		Mapa mapa = new Mapa();
+		mapa.setListaIntersecciones(listaIntersecciones);
+		mapa.setListaCuadras(listaCuadras);
 		
 		return mapa;
 	}

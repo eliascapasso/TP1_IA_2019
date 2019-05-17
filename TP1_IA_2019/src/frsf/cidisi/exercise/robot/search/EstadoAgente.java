@@ -3,7 +3,6 @@ package frsf.cidisi.exercise.robot.search;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 import java.util.ArrayList;
-
 import dominio.Interseccion;
 import dominio.Mapa;
 import dominio.Cuadra;
@@ -33,10 +32,14 @@ public class EstadoAgente extends SearchBasedAgentState {
      */
     @Override
     public SearchBasedAgentState clone() {
+    	EstadoAgente newState = new EstadoAgente();
+        newState.setListaDestinos(this.getListaDestinos());
+        newState.setRutaAgente(this.getRutaAgente());
+        newState.setListaCuadrasBloqueadas(this.getListaCuadrasBloqueadas());
+        newState.setPosicionActual(this.getPosicionActual());
+        newState.setMapa(this.getMapa().clone());
         
-		//TODO: Complete Method
-		
-        return null;
+        return newState;
     }
 
     /**
@@ -45,8 +48,16 @@ public class EstadoAgente extends SearchBasedAgentState {
      */
     @Override
     public void updateState(Perception p) {
-        
-    	//AgentePerception perception = (AgentePerception) p;
+        AgentePerception perception = (AgentePerception) p;
+    	
+    	
+    	ArrayList<Cuadra> listaCuadrasBloqueadas = perception.getListaCuadrasBloqueadas();
+    	
+    	for(Cuadra c: listaCuadrasBloqueadas){
+    		if(!this.getListaCuadrasBloqueadas().contains(c)){
+    			this.listaCuadrasBloqueadas.add(c);
+    		}
+    	}
     }
 
     /**
@@ -58,14 +69,14 @@ public class EstadoAgente extends SearchBasedAgentState {
     	mapa = Mapa.crearMapa();
     	
     	/////////// DESTINOS //////////
-    	this.listaDestinos = mapa.getListaDestinos();
+    	this.listaDestinos = Mapa.getListaDestinos();
     	
     	/////////// UBICACION AGENTE //////////
-    	this.posicionActual = mapa.getPosicionOrigenAgente();
+    	this.posicionActual = Mapa.getPosicionOrigenAgente();
     	
     	/////////// RUTA DEL AGENTE //////////
     	rutaAgente = new ArrayList<Interseccion>();
-    	rutaAgente.add(mapa.getPosicionOrigenAgente());
+    	rutaAgente.add(Mapa.getPosicionOrigenAgente());
     	
     	/////////// LISTA DE PRODUCTOS //////////
     	this.listaProductos = new ArrayList<Producto>();
@@ -122,7 +133,7 @@ public class EstadoAgente extends SearchBasedAgentState {
         str += posicionActual.toString()+"\n";
         str += "Ruta agente: ";
         str += rutaAgente.toString();
-        str += "\nCuadras Bloqueadas: " + this.getlistaCuadrasBloqueadas().toString() + "\n";
+        str += "\nCuadras Bloqueadas: " + this.getListaCuadrasBloqueadas().toString() + "\n";
 
         return str;
     }
@@ -133,10 +144,8 @@ public class EstadoAgente extends SearchBasedAgentState {
      */
     @Override
     public boolean equals(Object obj) {
-       
-       //TODO: Complete Method
-        
-        return true;
+    	EstadoAgente estadoAgente = (EstadoAgente) obj;
+    	return estadoAgente.getPosicionActual().equals(this.getPosicionActual());
     }
 
     //TODO: Complete this section with agent-specific methods
@@ -155,24 +164,42 @@ public class EstadoAgente extends SearchBasedAgentState {
      public void setListaDestinos(ArrayList<Supermercado> arg){
         listaDestinos = arg;
      }
-     public Mapa getmapa(){
-        return mapa;
-     }
-     public void setmapa(Mapa arg){
-        mapa = arg;
-     }
-     public Interseccion getposicionActual(){
-        return posicionActual;
-     }
-     public void setposicionActual(Interseccion arg){
-        posicionActual = arg;
-     }
-     public ArrayList<Cuadra> getlistaCuadrasBloqueadas(){
-        return listaCuadrasBloqueadas;
-     }
-     public void setlistaCuadrasBloqueadas(ArrayList<Cuadra> arg){
-    	 listaCuadrasBloqueadas = arg;
-     }
+
+	public Mapa getMapa() {
+		return mapa;
+	}
+
+	public void setMapa(Mapa mapa) {
+		this.mapa = mapa;
+	}
+
+	public Interseccion getPosicionActual() {
+		return posicionActual;
+	}
+
+	public void setPosicionActual(Interseccion posicionActual) {
+		this.posicionActual = posicionActual;
+	}
+
+	public ArrayList<Cuadra> getListaCuadrasBloqueadas() {
+		return listaCuadrasBloqueadas;
+	}
+
+	public void setListaCuadrasBloqueadas(ArrayList<Cuadra> listaCuadrasBloqueadas) {
+		this.listaCuadrasBloqueadas = listaCuadrasBloqueadas;
+	}
+
+	public ArrayList<Interseccion> getRutaAgente() {
+		return rutaAgente;
+	}
+
+	public void setRutaAgente(ArrayList<Interseccion> rutaAgente) {
+		this.rutaAgente = rutaAgente;
+	}
+	
+	public void agregarInterseccionRuta(Interseccion i){
+		this.rutaAgente.add(i);
+	}
 	
 }
 

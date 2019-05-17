@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import dominio.Cuadra;
 import dominio.Interseccion;
 import dominio.Producto;
+import dominio.Supermercado;
 import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
@@ -30,15 +31,15 @@ public class AmbienteZonaCostanera extends Environment {
     public  AgentePerception getPercept() {
         // Create a new perception to return
          AgentePerception perception = new AgentePerception();
-         
-         Interseccion posicionAgente = this.getEnvironmentState().getPosicionAgente();
 		
          perception.getListaCuadrasBloqueadas().clear();
-         perception.getListaPromociones().clear();
+         perception.getListaPromocionesSupermercados().clear();
          
         ArrayList<Cuadra> listaCuadrasBloqueadas = this.getEnvironmentState().getListaCuadrasBloqueadas();
+        ArrayList<Supermercado> listaPromocionesSupermercados = this.getEnvironmentState().getListaSupermercados();
         
-        //perception.setListaCuadrasBloqueadas(listaCuadrasBloqueadas);
+        perception.setListaCuadrasBloqueadas(listaCuadrasBloqueadas);
+        perception.setListaPromocionesSupermercados(listaPromocionesSupermercados);
         
         return perception;
     }
@@ -48,11 +49,9 @@ public class AmbienteZonaCostanera extends Environment {
         return environmentState.toString();
     }
 
-    
     public boolean agentFailed(Action actionReturned) {
 
-        EstadoAmbiente envState =
-                this.getEnvironmentState();
+        EstadoAmbiente envState = this.getEnvironmentState();
 
         // TODO: Complete Method        
 
@@ -61,6 +60,5 @@ public class AmbienteZonaCostanera extends Environment {
 
 	//TODO: Complete this section with agent-specific methods
     // The following methods are agent-specific:
-    
     
 }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import dominio.Interseccion;
 import dominio.Cuadra;
 import dominio.Producto;
+import dominio.Supermercado;
 import frsf.cidisi.faia.agent.Agent;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
@@ -20,11 +21,11 @@ public class AgentePerception extends Perception {
 //	private boolean cortecalle;
 //	private boolean manifestacion;
 //	private boolean PerceptionName;
-	private ArrayList<Producto> listaPromociones;
+	private ArrayList<Supermercado> listaPromocionesSupermercados;
 	private ArrayList<Cuadra> listaCuadrasBloqueadas;
 	
     public  AgentePerception() {
-    	listaPromociones = new ArrayList<Producto>();
+    	listaPromocionesSupermercados = new ArrayList<Supermercado>();
     	listaCuadrasBloqueadas = new ArrayList<Cuadra>();
     }
 
@@ -39,31 +40,37 @@ public class AgentePerception extends Perception {
     public void initPerception(Agent agentIn, Environment environmentIn) {
         Agente agent = (Agente) agentIn;
         AmbienteZonaCostanera environment = (AmbienteZonaCostanera) environmentIn;
-        EstadoAmbiente environmentState = environment.getEnvironmentState();
+        EstadoAmbiente estadoAmbiente = environment.getEnvironmentState();
        
-        Interseccion esquinaInicial = environmentState.getPosicionAgente();
-        
-        for(Cuadra c: environment.getEnvironmentState().getListaCuadrasBloqueadas())
-			if(!listaCuadrasBloqueadas.contains(c))
-				listaCuadrasBloqueadas.add(c);
-        //environmentState.contains(esquinaInicial,listaCalleBloqueadas,listaCalleDemoradas);
+        listaPromocionesSupermercados.addAll(estadoAmbiente.getListaSupermercados());
+        listaCuadrasBloqueadas.addAll(estadoAmbiente.getListaCuadrasBloqueadas());
     }
     
     @Override
     public String toString() {
-        StringBuffer str = new StringBuffer();
-
-        //TODO: Complete Method
-
-        return str.toString();
+    	String str = "\n";
+        str += "Cuadras Bloqueadas: " + listaCuadrasBloqueadas.toString() + "\n";
+        
+        str += "Promociones: \n";
+        for(Supermercado s: listaPromocionesSupermercados){
+        	str += "Supermercado: " + s.getNombre() + "\n";
+        	for(Producto p: s.getListaPromociones()){
+        		str += "-> Producto: " + p.getNombre() + ", " + "Precio: " + p.getPrecio() + "\n";
+        	}
+        }
+        
+        return str;
     }
 
-	public ArrayList<Producto> getListaPromociones() {
-		return listaPromociones;
+	
+
+	public ArrayList<Supermercado> getListaPromocionesSupermercados() {
+		return listaPromocionesSupermercados;
 	}
 
-	public void setListaPromociones(ArrayList<Producto> listaPromociones) {
-		this.listaPromociones = listaPromociones;
+	public void setListaPromocionesSupermercados(
+			ArrayList<Supermercado> listaPromocionesSupermercados) {
+		this.listaPromocionesSupermercados = listaPromocionesSupermercados;
 	}
 
 	public ArrayList<Cuadra> getListaCuadrasBloqueadas() {

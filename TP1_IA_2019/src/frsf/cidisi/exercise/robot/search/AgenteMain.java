@@ -7,9 +7,6 @@ public class AgenteMain {
 
     public static void main(String[] args) throws PrologConnectorException {
         Agente agent = new Agente();
-        
-        
-        //prueba push
 
         AmbienteZonaCostanera environment = new AmbienteZonaCostanera();
 

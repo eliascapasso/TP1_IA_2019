@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/faia"/>
 	<classpathentry exported="true" kind="lib" path="lib/utn.frsf.cidisi.idemia_1.0.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/utn.frsf.cidisi.idemia.diagram_1.0.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/utn.frsf.cidisi.idemia.edit_1.0.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/utn.frsf.cidisi.idemia.idemia2faia_1.0.0.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/faia"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

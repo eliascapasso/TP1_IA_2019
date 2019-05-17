@@ -1,5 +1,6 @@
 package dominio;
 
+
 public class Interseccion {
 	private int idInterseccion;
 	private String nombreInterseccion;
@@ -30,4 +31,14 @@ public class Interseccion {
 	public String toString() {
         return this.idInterseccion + " - " + this.nombreInterseccion;
     } 
+	
+	@Override
+	public boolean equals(Object obj) {
+		Interseccion i = (Interseccion) obj;
+		if(!(i.getIdInterseccion() == this.getIdInterseccion()))
+			return false;
+		else if(!i.getNombreInterseccion().equals(this.getNombreInterseccion()))
+			return false;
+		return true;
+	}
 }
