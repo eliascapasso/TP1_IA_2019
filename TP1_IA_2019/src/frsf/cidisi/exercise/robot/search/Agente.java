@@ -37,6 +37,7 @@ public class Agente extends SearchBasedAgent {
         for(Interseccion i: listaI){
         	operators.addElement(new TrasladarseA(i));	
         }	
+        //operators.addElement(new TrasladarseA(new Interseccion(11, "Av. Gral. Paz, Javier de la Rosa")));
         //Comprar
         //operators.addElement(new Comprar());	
 

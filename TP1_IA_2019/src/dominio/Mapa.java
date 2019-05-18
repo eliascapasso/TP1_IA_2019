@@ -98,7 +98,7 @@ public class Mapa {
 		mapa = importarExcel("Datos/Zona costanera.csv"); 
 		
 		/////////// POSICION AGENTE //////////
-		posicionOrigenAgente = mapa.buscarInterseccionPorId(100);
+		posicionOrigenAgente = mapa.buscarInterseccionPorId(1);
 		
 		/////////// SUPERMERCADOS //////////
 		Supermercado alvear = new Supermercado();
